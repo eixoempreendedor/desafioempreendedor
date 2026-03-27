@@ -12,7 +12,7 @@ export const homeFAQ = [
   {
     question: "Preciso separar quanto tempo por semana?",
     answer:
-      "Os encontros são quinzenais e presenciais. Além disso, tem as leituras aplicadas e a implementação na sua empresa com o apoio do consultor. No total, algo entre 4 e 6 horas por quinzena dedicadas ao programa.",
+      "Os encontros são mensais e presenciais. Além disso, tem as leituras aplicadas e a implementação na sua empresa com o apoio do consultor. No total, algo entre 4 e 6 horas por mês dedicadas ao programa.",
   },
   {
     question: "Já tentei curso e mentoria e não funcionou. Por que seria diferente?",
@@ -56,7 +56,7 @@ export const beforeAfter = [
   },
   {
     before: "Sem diagnóstico — \"eu me conheço\"",
-    after: "Perfil DISC mapeado com evolução medida",
+    after: "Perfil comportamental mapeado com evolução medida",
   },
   {
     before: "Decisão por impulso — apaga incêndio o dia todo",

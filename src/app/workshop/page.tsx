@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import CTAButton from "@/components/CTAButton";
@@ -26,8 +27,22 @@ export default function WorkshopPage() {
   return (
     <>
       <main>
+        {/* HEADER */}
+        <header className="fixed top-0 z-40 w-full border-b border-gray-border/50 bg-black-deep/80 backdrop-blur-md">
+          <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-3">
+            <Image
+              src="/images/logo-full.png"
+              alt="Desafio Empreendedor"
+              width={180}
+              height={40}
+              className="h-8 w-auto"
+            />
+            <CTAButton text="Garantir vaga" href={WA_WORKSHOP} className="!px-5 !py-2 !text-sm" />
+          </div>
+        </header>
+
         {/* HERO */}
-        <section className="flex min-h-[90vh] flex-col items-center justify-center px-6 text-center">
+        <section className="flex min-h-[90vh] flex-col items-center justify-center px-6 pt-16 text-center">
           <p className="mb-4 text-sm font-medium tracking-widest text-gold uppercase">
             Workshop Gratuito e Presencial
           </p>
@@ -52,6 +67,20 @@ export default function WorkshopPage() {
             </div>
             <CTAButton text="Garantir minha vaga" href={WA_WORKSHOP} className="mt-4" />
           </div>
+
+          {/* VSL - Substituir pelo vídeo quando gravar */}
+          {/*
+          <div className="mx-auto mt-12 w-full max-w-2xl overflow-hidden border border-gray-border">
+            <div className="relative aspect-video bg-black-soft">
+              <iframe
+                src="YOUR_VIDEO_URL"
+                className="absolute inset-0 h-full w-full"
+                allow="autoplay; fullscreen"
+                allowFullScreen
+              />
+            </div>
+          </div>
+          */}
         </section>
 
         {/* O QUE VOCÊ VAI DESCOBRIR */}
@@ -120,7 +149,18 @@ export default function WorkshopPage() {
 
         {/* QUEM É LUIZ CURTI */}
         <Section id="quem" dark>
-          <SectionTitle>Quem conduz o workshop</SectionTitle>
+          <div className="mb-10 flex flex-col items-center gap-8 md:flex-row md:items-start">
+            <Image
+              src="/images/luiz-perfil.png"
+              alt="Luiz Curti"
+              width={200}
+              height={200}
+              className="h-40 w-40 shrink-0 rounded-full object-cover"
+            />
+            <div>
+              <SectionTitle>Quem conduz o workshop</SectionTitle>
+            </div>
+          </div>
           <div className="space-y-4 text-lg leading-relaxed text-gray-text">
             <p>
               Meu nome é <span className="text-white">Luiz Curti</span>. Sou

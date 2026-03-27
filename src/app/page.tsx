@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import CTAButton from "@/components/CTAButton";
@@ -13,7 +14,7 @@ const WA_DESAFIO =
 export const metadata: Metadata = {
   title: "Desafio Empreendedor — 7 meses de trabalho real no seu negócio",
   description:
-    "Programa presencial de 7 meses para donos de PME em Alexânia e região. Consultoria individual, encontros quinzenais, diagnóstico DISC. Turma limitada a 10 empresas.",
+    "Programa presencial de 7 meses para donos de PME em Alexânia e região. Consultoria individual, encontros mensais, avaliação comportamental. Turma limitada a 10 empresas.",
   openGraph: {
     title: "Desafio Empreendedor — Alexânia",
     description:
@@ -26,28 +27,56 @@ export default function HomePage() {
   return (
     <>
       <main>
+        {/* HEADER */}
+        <header className="fixed top-0 z-40 w-full border-b border-gray-border/50 bg-black-deep/80 backdrop-blur-md">
+          <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-3">
+            <Image
+              src="/images/logo-full.png"
+              alt="Desafio Empreendedor"
+              width={180}
+              height={40}
+              className="h-8 w-auto"
+            />
+            <CTAButton text="WhatsApp" href={WA_DESAFIO} className="!px-5 !py-2 !text-sm" />
+          </div>
+        </header>
+
         {/* HERO */}
-        <section className="flex min-h-[90vh] flex-col items-center justify-center px-6 text-center">
-          <h1 className="font-heading text-5xl leading-tight tracking-wide text-white uppercase md:text-7xl">
-            Seu negócio não precisa
-            <br />
-            de mais esforço.
-            <br />
-            <span className="text-gold">Precisa de trabalho de verdade.</span>
-          </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-text md:text-xl">
+        <section className="relative flex min-h-[90vh] flex-col items-center justify-center px-6 text-center">
+          <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+            <Image
+              src="/images/luiz-corredor.jpg"
+              alt=""
+              fill
+              className="object-cover object-top opacity-15"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black-deep/60 via-black-deep/80 to-black-deep" />
+          </div>
+          <div className="relative z-10">
+            <h1 className="font-heading text-5xl leading-tight tracking-wide text-white uppercase md:text-7xl">
+              Seu negócio não precisa
+              <br />
+              de mais esforço.
+              <br />
+              <span className="text-gold">Precisa de trabalho de verdade.</span>
+            </h1>
+          </div>
+          <p className="relative z-10 mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-text md:text-xl">
             O Desafio Empreendedor é um programa presencial de 7 meses para
             donos de PME em Alexânia e região que estão cansados de girar em
             círculo — e prontos para mudar de dentro pra fora.
           </p>
-          <CTAButton
-            text="Quero conversar no WhatsApp"
-            href={WA_DESAFIO}
-            className="mt-8"
-          />
-          <p className="mt-3 text-sm text-gray-muted">
-            Conversa de 15 minutos. Sem compromisso. Sem enrolação.
-          </p>
+          <div className="relative z-10">
+            <CTAButton
+              text="Quero conversar no WhatsApp"
+              href={WA_DESAFIO}
+              className="mt-8"
+            />
+            <p className="mt-3 text-sm text-gray-muted">
+              Conversa de 15 minutos. Sem compromisso. Sem enrolação.
+            </p>
+          </div>
         </section>
 
         {/* PROBLEMA */}
@@ -103,7 +132,18 @@ export default function HomePage() {
 
         {/* QUEM SOU EU */}
         <Section id="quem">
-          <SectionTitle>Luiz Curti</SectionTitle>
+          <div className="mb-10 flex flex-col items-center gap-8 md:flex-row md:items-start">
+            <Image
+              src="/images/luiz-mesa.jpg"
+              alt="Luiz Curti — Consultor empresarial"
+              width={400}
+              height={500}
+              className="w-full max-w-[280px] border-2 border-gray-border object-cover md:max-w-[320px]"
+            />
+            <div>
+              <SectionTitle>Luiz Curti</SectionTitle>
+            </div>
+          </div>
           <div className="space-y-4 text-lg leading-relaxed text-gray-text">
             <p>
               Sou consultor empresarial e trabalho diretamente com donos de PME.
@@ -120,7 +160,7 @@ export default function HomePage() {
               baseada em{" "}
               <span className="text-white font-semibold">trabalho</span>:
               diagnóstico comportamental, consultoria presencial dentro da
-              empresa, encontros quinzenais com conteúdo aplicado e
+              empresa, encontros mensais com conteúdo aplicado e
               acompanhamento individual.
             </p>
             <p>
@@ -143,25 +183,25 @@ export default function HomePage() {
           </p>
 
           <p className="mb-6 font-heading text-2xl tracking-wide text-gold uppercase">
-            Metodologia 4Cs
+            Como o programa funciona
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
               {
-                title: "Clareza",
-                text: "Diagnóstico financeiro, comportamental (DISC) e mapeamento da operação. Sem clareza, qualquer decisão é chute.",
+                title: "Diagnóstico",
+                text: "Avaliação comportamental empresarial completa, mapeamento financeiro e análise da operação. Antes de mudar qualquer coisa, você precisa enxergar onde está.",
               },
               {
-                title: "Comando",
-                text: "Definir metas, prioridades e conduzir sua equipe com direção — não com gritos ou microgestão.",
+                title: "Encontros mensais",
+                text: "Encontros presenciais com conteúdo aplicado, dinâmicas vivenciais e troca real entre empresários da região. Não é aula — é trabalho.",
               },
               {
-                title: "Controle",
-                text: "DRE funcionando. Indicadores que você entende e acompanha toda semana. Controle é liberdade pra decidir com segurança.",
+                title: "Consultoria na empresa",
+                text: "Um consultor vai até o seu negócio. Olha seus números, sua operação, sua equipe. E te ajuda a implantar o que você aprendeu nos encontros.",
               },
               {
-                title: "Comportamento",
-                text: "O pilar mais difícil. O DISC mapeia como você reage sob pressão, como delega, como lida com conflito. E mede sua evolução.",
+                title: "Acompanhamento",
+                text: "Durante 7 meses, você é cobrado, orientado e desafiado a agir diferente. Não é sobre saber mais — é sobre fazer diferente.",
               },
             ].map((item, i) => (
               <div
@@ -169,7 +209,7 @@ export default function HomePage() {
                 className="border border-gray-border bg-black-card p-6"
               >
                 <p className="font-heading text-xl tracking-wide text-gold uppercase">
-                  {i + 1}. {item.title}
+                  {item.title}
                 </p>
                 <p className="mt-3 text-gray-text leading-relaxed">
                   {item.text}
@@ -181,9 +221,9 @@ export default function HomePage() {
           <div className="mt-10 space-y-3">
             <p className="mb-4 font-semibold text-white">O que está incluído:</p>
             {[
-              "Encontros quinzenais presenciais — conteúdo aplicado, dinâmicas vivenciais, troca entre empresários",
+              "Encontros mensais presenciais — conteúdo aplicado, dinâmicas vivenciais, troca entre empresários",
               "Consultoria individual na sua empresa — um consultor vai até o seu negócio",
-              "Diagnóstico DISC antes e depois — evolução medida com dados reais",
+              "Avaliação comportamental empresarial — antes e depois, evolução medida com dados reais",
               "Leituras aplicadas — livros escolhidos com propósito",
               "Dinâmicas vivenciais — exercícios que mexem com o jeito que você age",
               "Duração: 7 meses — porque mudança real não acontece num fim de semana",
@@ -332,8 +372,8 @@ export default function HomePage() {
                 text: "Você não vai ser mais um número numa plateia. Vai estar com outros empresários da região, enfrentando desafios parecidos. Atenção individual de verdade.",
               },
               {
-                title: "DISC antes e depois.",
-                text: "Mapeamos seu perfil comportamental no início e no final. Você vê com dados onde mudou, onde avançou e o que ainda precisa ajustar.",
+                title: "Avaliação comportamental antes e depois.",
+                text: "Mapeamos seu perfil no início e no final. Você vê com dados onde mudou, onde avançou e o que ainda precisa ajustar.",
               },
               {
                 title: "7 meses, não fim de semana.",
