@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4A017;
+  --color-gold-light: #E8B84D;
+  --color-gold-dark: #B8860B;
+  --color-black-deep: #121214;
+  --color-black-soft: #1A1A1A;
+  --color-black-card: #1E1E22;
+  --color-gray-border: #2A2A2E;
+  --color-gray-muted: #666666;
+  --color-gray-text: #A1A1AA;
+  --font-heading: var(--font-bebas-neue), "Bebas Neue", sans-serif;
+  --font-body: var(--font-inter), "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-black-deep);
+  color: #fafafa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-black-deep);
+}
+
+/* FAQ Accordion */
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-chevron {
+  transition: transform 0.2s ease;
+}
+
+/* WhatsApp pulse */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.whatsapp-pulse::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background-color: #25D366;
+  animation: pulse-ring 2s ease-out infinite;
+  z-index: -1;
+}
