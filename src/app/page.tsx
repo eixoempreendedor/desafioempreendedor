@@ -164,12 +164,32 @@ export default function HomePage() {
               acompanhamento individual.
             </p>
             <p>
-              Trabalho com turmas pequenas porque resultado de verdade exige
-              atenção individual. E agora estou trazendo esse processo para
-              Alexânia pela primeira vez.
+              O método por trás do Desafio Empreendedor já formou mais de{" "}
+              <span className="text-gold font-semibold">31 mil empresários</span>{" "}
+              em todo o Brasil. Agora, pela primeira vez, esse processo chega a
+              Alexânia — com turma presencial e atenção individual.
             </p>
           </div>
         </Section>
+
+        {/* NÚMEROS / SOCIAL PROOF */}
+        <section className="border-y border-gray-border bg-black-soft px-6 py-12">
+          <div className="mx-auto grid max-w-4xl grid-cols-2 gap-8 text-center md:grid-cols-4">
+            {[
+              { number: "31.000+", label: "Empresários formados no Brasil" },
+              { number: "7", label: "Meses de acompanhamento" },
+              { number: "10", label: "Empresas por turma" },
+              { number: "1ª", label: "Turma em Alexânia" },
+            ].map((item, i) => (
+              <div key={i}>
+                <p className="font-heading text-4xl tracking-wide text-gold md:text-5xl">
+                  {item.number}
+                </p>
+                <p className="mt-2 text-sm text-gray-text">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* O QUE É */}
         <Section id="programa" dark>

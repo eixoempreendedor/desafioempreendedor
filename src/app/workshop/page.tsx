@@ -177,6 +177,13 @@ export default function WorkshopPage() {
               o que está bagunçado e montar um plano que funciona na prática.
             </p>
           </div>
+          <div className="my-8 flex items-center gap-6 border border-gray-border bg-black-card p-5">
+            <p className="font-heading text-4xl text-gold">31.000+</p>
+            <p className="text-gray-text">
+              empresários já passaram por esse método em todo o Brasil.
+              Agora ele chega a Alexânia.
+            </p>
+          </div>
           <div className="mt-8 border-t border-gray-border pt-8">
             <p className="text-lg font-semibold text-gold">
               Por que Alexânia?
