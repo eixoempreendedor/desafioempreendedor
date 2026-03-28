@@ -338,12 +338,12 @@ export default function HomePage() {
               {
                 step: "1",
                 title: "Conversa no WhatsApp",
-                text: "Você me chama no WhatsApp e a gente conversa por 15 minutos. Quero entender seu negócio, sua situação e seus desafios. Sem script, sem pressão.",
+                text: "Você me chama no WhatsApp e a gente conversa. Quero entender seu negócio, sua situação e seus desafios. Sem script, sem pressão.",
               },
               {
                 step: "2",
-                title: "Workshop Gratuito — 25/04",
-                text: "Você participa do workshop \"Empresário Rico x Empresário Pobre\", gratuito e presencial em Alexânia. Vai saber exatamente onde você está no mapa.",
+                title: "Entrevista presencial",
+                text: "Eu vou até a sua empresa. Conheço o negócio, conheço o empresário. Nosso trabalho é olho no olho — e começa antes mesmo da turma.",
               },
               {
                 step: "3",
