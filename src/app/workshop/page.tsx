@@ -197,6 +197,25 @@ export default function WorkshopPage() {
           </div>
         </Section>
 
+        {/* ALEXÂNIA — DIVISOR VISUAL */}
+        <section className="relative h-52 overflow-hidden md:h-64">
+          <Image
+            src="/images/alexania.jpg"
+            alt="Vista aérea de Alexânia, GO"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black-deep/70" />
+          <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
+            <p className="font-heading text-3xl tracking-wide text-gold uppercase md:text-4xl">
+              25 de abril — Alexânia, GO
+            </p>
+            <p className="mt-2 text-gray-text">
+              Workshop gratuito e presencial
+            </p>
+          </div>
+        </section>
+
         {/* DETALHES DO EVENTO */}
         <Section id="detalhes">
           <SectionTitle>Informações do workshop</SectionTitle>

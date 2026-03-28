@@ -172,6 +172,25 @@ export default function HomePage() {
           </div>
         </Section>
 
+        {/* ALEXÂNIA — DIVISOR VISUAL */}
+        <section className="relative h-64 overflow-hidden md:h-80">
+          <Image
+            src="/images/alexania.jpg"
+            alt="Vista aérea de Alexânia, GO"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black-deep/70" />
+          <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
+            <p className="font-heading text-4xl tracking-wide text-gold uppercase md:text-5xl">
+              Alexânia, GO
+            </p>
+            <p className="mt-2 text-gray-text">
+              Primeira turma do Desafio Empreendedor na região
+            </p>
+          </div>
+        </section>
+
         {/* NÚMEROS / SOCIAL PROOF */}
         <section className="border-y border-gray-border bg-black-soft px-6 py-12">
           <div className="mx-auto grid max-w-4xl grid-cols-2 gap-8 text-center md:grid-cols-4">
