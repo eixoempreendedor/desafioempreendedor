@@ -6,6 +6,7 @@ import CTAButton from "@/components/CTAButton";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import WorkshopForm from "@/components/WorkshopForm";
 import { workshopFAQ } from "@/data/workshop";
 
 const WA_WORKSHOP =
@@ -37,7 +38,7 @@ export default function WorkshopPage() {
               height={40}
               className="h-8 w-auto"
             />
-            <CTAButton text="Garantir vaga" href={WA_WORKSHOP} className="!px-5 !py-2 !text-sm" />
+            <CTAButton text="Garantir vaga" href="#inscricao" className="!px-5 !py-2 !text-sm" />
           </div>
         </header>
 
@@ -57,15 +58,17 @@ export default function WorkshopPage() {
             É comportamento. É decisão. É o que você faz com as 14 horas que
             passa dentro do seu negócio todo dia.
           </p>
-          <div className="mt-8 flex flex-col items-center gap-3">
-            <div className="flex items-center gap-3 text-sm text-gray-text">
-              <span className="font-semibold text-white">25 de abril</span>
-              <span className="text-gray-border">|</span>
-              <span>Alexânia, GO</span>
-              <span className="text-gray-border">|</span>
-              <span className="text-gold">Gratuito</span>
-            </div>
-            <CTAButton text="Garantir minha vaga" href={WA_WORKSHOP} className="mt-4" />
+          <div className="mt-6 flex items-center justify-center gap-3 text-sm text-gray-text">
+            <span className="font-semibold text-white">25 de abril</span>
+            <span className="text-gray-border">|</span>
+            <span>Alexânia, GO</span>
+            <span className="text-gray-border">|</span>
+            <span className="text-gold">Gratuito</span>
+          </div>
+
+          {/* FORMULÁRIO DE INSCRIÇÃO */}
+          <div id="inscricao" className="mx-auto mt-8 w-full max-w-md">
+            <WorkshopForm />
           </div>
 
           {/* VSL - Substituir pelo vídeo quando gravar */}
@@ -143,7 +146,7 @@ export default function WorkshopPage() {
             você.
           </p>
           <div className="mt-10">
-            <CTAButton text="Quero participar" href={WA_WORKSHOP} />
+            <CTAButton text="Quero participar" href="#inscricao" />
           </div>
         </Section>
 
@@ -238,7 +241,7 @@ export default function WorkshopPage() {
             ))}
           </div>
           <div className="mt-8">
-            <CTAButton text="Reservar minha vaga" href={WA_WORKSHOP} />
+            <CTAButton text="Reservar minha vaga" href="#inscricao" />
           </div>
         </Section>
 
@@ -275,7 +278,7 @@ export default function WorkshopPage() {
           <FAQ items={workshopFAQ} />
         </Section>
 
-        {/* CTA FINAL */}
+        {/* CTA FINAL COM FORMULÁRIO */}
         <Section dark>
           <div className="text-center">
             <h2 className="font-heading text-4xl tracking-wide text-gold uppercase md:text-5xl">
@@ -285,14 +288,9 @@ export default function WorkshopPage() {
               Você não precisa de mais esforço. Precisa de clareza. As vagas são
               limitadas porque o evento é presencial. Quando acabar, acabou.
             </p>
-            <CTAButton
-              text="Garantir minha vaga — WhatsApp"
-              href={WA_WORKSHOP}
-              className="mt-8"
-            />
-            <p className="mt-4 text-sm text-gray-muted">
-              Mande uma mensagem. Leva menos de 1 minuto.
-            </p>
+          </div>
+          <div className="mx-auto mt-10 max-w-md">
+            <WorkshopForm />
           </div>
         </Section>
       </main>
