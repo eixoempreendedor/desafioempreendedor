@@ -43,7 +43,7 @@ export default function HomePage() {
         </header>
 
         {/* HERO */}
-        <section className="relative flex min-h-[90vh] flex-col items-center justify-center px-6 text-center">
+        <section className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-20 text-center">
           <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
             <Image
               src="/images/luiz-corredor.jpg"

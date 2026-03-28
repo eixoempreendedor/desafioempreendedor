@@ -43,7 +43,7 @@ export default function WorkshopPage() {
         </header>
 
         {/* HERO */}
-        <section className="flex min-h-[90vh] flex-col items-center justify-center px-6 pt-16 text-center">
+        <section className="flex min-h-screen flex-col items-center justify-center px-6 pt-20 text-center">
           <p className="mb-4 text-sm font-medium tracking-widest text-gold uppercase">
             Workshop Gratuito e Presencial
           </p>
