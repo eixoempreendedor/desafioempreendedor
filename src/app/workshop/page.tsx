@@ -6,7 +6,7 @@ import CTAButton from "@/components/CTAButton";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import WorkshopForm from "@/components/WorkshopForm";
+import LeadForm from "@/components/LeadForm";
 import { workshopFAQ } from "@/data/workshop";
 
 const WA_WORKSHOP =
@@ -68,7 +68,7 @@ export default function WorkshopPage() {
 
           {/* FORMULÁRIO DE INSCRIÇÃO */}
           <div id="inscricao" className="mx-auto mt-8 w-full max-w-md">
-            <WorkshopForm />
+            <LeadForm variant="workshop" />
           </div>
 
           {/* VSL - Substituir pelo vídeo quando gravar */}
@@ -290,7 +290,7 @@ export default function WorkshopPage() {
             </p>
           </div>
           <div className="mx-auto mt-10 max-w-md">
-            <WorkshopForm />
+            <LeadForm variant="workshop" />
           </div>
         </Section>
       </main>

@@ -6,6 +6,7 @@ import CTAButton from "@/components/CTAButton";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import LeadForm from "@/components/LeadForm";
 import { homeFAQ, beforeAfter } from "@/data/home";
 
 const WA_DESAFIO =
@@ -37,7 +38,7 @@ export default function HomePage() {
               height={40}
               className="h-8 w-auto"
             />
-            <CTAButton text="WhatsApp" href={WA_DESAFIO} className="!px-5 !py-2 !text-sm" />
+            <CTAButton text="Inscreva-se" href="#inscricao" className="!px-5 !py-2 !text-sm" />
           </div>
         </header>
 
@@ -67,15 +68,8 @@ export default function HomePage() {
             donos de PME em Alexânia e região que estão cansados de girar em
             círculo — e prontos para mudar de dentro pra fora.
           </p>
-          <div className="relative z-10">
-            <CTAButton
-              text="Quero conversar no WhatsApp"
-              href={WA_DESAFIO}
-              className="mt-8"
-            />
-            <p className="mt-3 text-sm text-gray-muted">
-              Conversa de 15 minutos. Sem compromisso. Sem enrolação.
-            </p>
+          <div id="inscricao" className="relative z-10 mx-auto mt-10 w-full max-w-md">
+            <LeadForm variant="desafio" />
           </div>
         </section>
 
@@ -389,7 +383,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-10 text-center">
-            <CTAButton text="Quero dar o primeiro passo" href={WA_DESAFIO} />
+            <CTAButton text="Quero dar o primeiro passo" href="#inscricao" />
           </div>
         </Section>
 
@@ -450,19 +444,16 @@ export default function HomePage() {
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-text">
               Se você leu até aqui, alguma coisa te trouxe. Talvez o cansaço.
-              Talvez a honestidade de reconhecer que algo precisa mudar. O
-              primeiro passo é uma conversa de 15 minutos no WhatsApp.
-            </p>
-            <CTAButton
-              text="Chamar no WhatsApp agora"
-              href={WA_DESAFIO}
-              className="mt-8"
-            />
-            <p className="mt-4 text-sm text-gray-muted">
-              Não é mais esforço que vai mudar seu negócio.{" "}
-              <span className="text-gold">É trabalho de verdade.</span>
+              Talvez a honestidade de reconhecer que algo precisa mudar.
             </p>
           </div>
+          <div className="mx-auto mt-10 max-w-md">
+            <LeadForm variant="desafio" />
+          </div>
+          <p className="mt-6 text-center text-sm text-gray-muted">
+            Não é mais esforço que vai mudar seu negócio.{" "}
+            <span className="text-gold">É trabalho de verdade.</span>
+          </p>
         </Section>
       </main>
 

@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   try {
-    const { nome, telefone, empresa } = await request.json();
+    const { nome, telefone, empresa, origem } = await request.json();
 
     if (!nome || !telefone || !empresa) {
       return NextResponse.json(
@@ -19,7 +19,7 @@ export async function POST(request: Request) {
       await fetch(webhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ nome, telefone, empresa, timestamp }),
+        body: JSON.stringify({ nome, telefone, empresa, timestamp, origem: origem || "workshop" }),
       }).catch(() => {
         // Don't fail the request if webhook fails
         console.error("Webhook failed, but signup saved");
@@ -27,7 +27,7 @@ export async function POST(request: Request) {
     }
 
     // Log for Vercel logs (always available)
-    console.log("WORKSHOP_SIGNUP:", JSON.stringify({ nome, telefone, empresa, timestamp }));
+    console.log("LEAD_SIGNUP:", JSON.stringify({ nome, telefone, empresa, origem, timestamp }));
 
     return NextResponse.json({ success: true });
   } catch {
