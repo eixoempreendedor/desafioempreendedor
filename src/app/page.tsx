@@ -132,43 +132,45 @@ export default function HomePage() {
 
         {/* QUEM SOU EU */}
         <Section id="quem">
-          <div className="mb-10 flex flex-col items-center gap-8 md:flex-row md:items-start">
-            <Image
-              src="/images/luiz-mesa.jpg"
-              alt="Luiz Curti — Consultor empresarial"
-              width={400}
-              height={500}
-              className="w-full max-w-[280px] border-2 border-gray-border object-cover md:max-w-[320px]"
-            />
+          <div className="flex flex-col gap-10 md:flex-row md:gap-12">
+            <div className="shrink-0">
+              <Image
+                src="/images/luiz-mesa.jpg"
+                alt="Luiz Curti — Consultor empresarial"
+                width={400}
+                height={500}
+                className="w-full max-w-[300px] border-2 border-gray-border object-cover md:w-[280px]"
+              />
+            </div>
             <div>
               <SectionTitle>Luiz Curti</SectionTitle>
+              <div className="space-y-4 text-lg leading-relaxed text-gray-text">
+                <p>
+                  Sou consultor empresarial e trabalho diretamente com donos de PME.
+                </p>
+                <p>
+                  Eu sei como é estar no lugar que você está. Já vivi o ciclo de
+                  trabalhar 14 horas por dia e não ver resultado proporcional. Já
+                  tive medo de olhar os números. Já confundi esforço com progresso.
+                  E aprendi, da forma mais cara possível, que o gargalo de uma
+                  empresa pequena quase sempre é o comportamento do dono.
+                </p>
+                <p>
+                  Não sou palestrante. Não vendo motivação. Minha metodologia é
+                  baseada em{" "}
+                  <span className="text-white font-semibold">trabalho</span>:
+                  diagnóstico comportamental, consultoria presencial dentro da
+                  empresa, encontros mensais com conteúdo aplicado e
+                  acompanhamento individual.
+                </p>
+                <p>
+                  O método por trás do Desafio Empreendedor já formou mais de{" "}
+                  <span className="text-gold font-semibold">31 mil empresários</span>{" "}
+                  em todo o Brasil. Agora, pela primeira vez, esse processo chega
+                  a Alexânia — com turma presencial e atenção individual.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="space-y-4 text-lg leading-relaxed text-gray-text">
-            <p>
-              Sou consultor empresarial e trabalho diretamente com donos de PME.
-            </p>
-            <p>
-              Eu sei como é estar no lugar que você está. Já vivi o ciclo de
-              trabalhar 14 horas por dia e não ver resultado proporcional. Já
-              tive medo de olhar os números. Já confundi esforço com progresso. E
-              aprendi, da forma mais cara possível, que o gargalo de uma empresa
-              pequena quase sempre é o comportamento do dono.
-            </p>
-            <p>
-              Não sou palestrante. Não vendo motivação. Minha metodologia é
-              baseada em{" "}
-              <span className="text-white font-semibold">trabalho</span>:
-              diagnóstico comportamental, consultoria presencial dentro da
-              empresa, encontros mensais com conteúdo aplicado e
-              acompanhamento individual.
-            </p>
-            <p>
-              O método por trás do Desafio Empreendedor já formou mais de{" "}
-              <span className="text-gold font-semibold">31 mil empresários</span>{" "}
-              em todo o Brasil. Agora, pela primeira vez, esse processo chega a
-              Alexânia — com turma presencial e atenção individual.
-            </p>
           </div>
         </Section>
 
