@@ -167,7 +167,7 @@ export default function WorkshopPage() {
           <div className="space-y-4 text-lg leading-relaxed text-gray-text">
             <p>
               Meu nome é <span className="text-white">Luiz Curti</span>. Sou
-              consultor de negócios para pequenas e médias empresas.
+              Consultor de Resultados Empresariais.
             </p>
             <p>
               Nos últimos anos, trabalhei de perto com empresários que tinham o

@@ -130,7 +130,7 @@ export default function HomePage() {
             <div className="shrink-0">
               <Image
                 src="/images/luiz-mesa.jpg"
-                alt="Luiz Curti — Consultor empresarial"
+                alt="Luiz Curti — Consultor de Resultados Empresariais"
                 width={400}
                 height={500}
                 className="w-full max-w-[300px] border-2 border-gray-border object-cover md:w-[280px]"
@@ -140,7 +140,7 @@ export default function HomePage() {
               <SectionTitle>Luiz Curti</SectionTitle>
               <div className="space-y-4 text-lg leading-relaxed text-gray-text">
                 <p>
-                  Sou consultor empresarial e trabalho diretamente com donos de PME.
+                  Sou Consultor de Resultados Empresariais e trabalho diretamente com donos de PME.
                 </p>
                 <p>
                   Eu sei como é estar no lugar que você está. Já vivi o ciclo de
