@@ -94,20 +94,20 @@ export default function WorkshopPage() {
           <div className="space-y-6">
             {[
               {
-                title: "O padrão que separa quem cresce de quem fica parado",
-                text: "E como identificar em qual grupo você está hoje.",
+                title: "As 6 gestões que mantêm uma empresa viva",
+                text: "Emocional, Estratégica, Comercial, Financeira, Operacional e Pessoas — e por que, quando uma falha, as outras compensam só até o limite.",
               },
               {
                 title: "Por que você trabalha cada vez mais e o negócio não responde",
-                text: "O erro silencioso que 8 em cada 10 donos de PME cometem sem perceber.",
+                text: "Empresa não morre de repente: ela dá sinais. Você vai aprender a ler esses sinais antes que virem crise no caixa.",
               },
               {
-                title: "O que mudar primeiro",
-                text: "Quando tudo parece urgente, existe uma ordem certa. Você vai sair com ela.",
+                title: "O custo real de decidir no impulso",
+                text: "Casos reais de decisões tomadas sob emoção — e ferramentas práticas de autogestão e de caixa pra não repetir na sua empresa.",
               },
               {
-                title: "O custo real de continuar no piloto automático",
-                text: "Em dinheiro, em tempo e em saúde.",
+                title: "Diagnóstico ao vivo: a Mandala do Lucro",
+                text: "No final, você faz o autodiagnóstico das 6 gestões e sai sabendo quais são as 2 mais críticas do seu negócio — e o que mudar primeiro.",
               },
             ].map((item, i) => (
               <div key={i} className="flex gap-4 border-l-2 border-gold pl-6">
