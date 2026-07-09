@@ -4,19 +4,12 @@ import type { NextRequest } from "next/server";
 export function middleware(request: NextRequest) {
   const host = request.headers.get("host") || "";
 
-  // Workshop domain — OFFLINE (campanha isolada futura)
-  // Redireciona para a homepage do Desafio por enquanto
+  // Domínio da campanha antiga (Empresário Rico x Pobre) — redireciona
+  // para a página do workshop atual (Gestão & Networking — Formosa)
   if (host.includes("empresarioricovsempresariopobre")) {
     const url = request.nextUrl.clone();
     url.hostname = "desafioempreendedoralexania.luizcurti.com.br";
-    url.pathname = "/";
-    return NextResponse.redirect(url);
-  }
-
-  // Block direct access to /workshop
-  if (request.nextUrl.pathname === "/workshop") {
-    const url = request.nextUrl.clone();
-    url.pathname = "/";
+    url.pathname = "/workshop";
     return NextResponse.redirect(url);
   }
 

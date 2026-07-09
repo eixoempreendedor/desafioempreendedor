@@ -8,7 +8,7 @@ type FormVariant = "workshop" | "desafio";
 
 const MESSAGES: Record<FormVariant, { wa: string; success: string; button: string }> = {
   workshop: {
-    wa: "Olá! Meu nome é {nome}, sou da empresa {empresa}. Quero confirmar minha vaga no workshop gratuito do dia 25/04. Fiz minha inscrição pelo site.",
+    wa: "Olá! Meu nome é {nome}, sou da empresa {empresa}. Quero confirmar minha vaga no workshop Gestão & Networking do dia 20/07 em Formosa. Fiz minha inscrição pelo site.",
     success: "Vaga reservada!",
     button: "Garantir minha vaga",
   },

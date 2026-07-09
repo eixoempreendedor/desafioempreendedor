@@ -49,22 +49,28 @@ export async function POST(request: Request) {
     const primeiroNome = String(nome).trim().split(/\s+/)[0];
     const leadPhone = normPhone(telefone);
 
+    const isWorkshop = origem === "workshop";
+
     // 1) Avisa o Luiz (numero da instancia principal)
     const notifyPhone = process.env.LEAD_NOTIFY_PHONE || "5561981726782";
     const aviso =
-      `🔔 *NOVO LEAD — Desafio Empreendedor Alexânia*\n\n` +
+      `🔔 *NOVO LEAD — ${isWorkshop ? "Workshop Gestão & Networking (Formosa)" : "Desafio Empreendedor Alexânia"}*\n\n` +
       `👤 ${nome}\n` +
       `🏢 ${empresa}\n` +
       `📱 ${telefone}\n\n` +
       `Origem: ${origem || "desafio"}`;
 
     // 2) Auto-resposta pro lead
-    const boasVindas =
-      `Olá, ${primeiroNome}! Aqui é o Luiz Curti. 👋\n\n` +
-      `Recebi seu cadastro no *Desafio Empreendedor Alexânia*. ` +
-      `Em breve a gente conversa pra entender o momento da sua empresa.\n\n` +
-      `Se quiser adiantar, é só me responder por aqui.\n\n` +
-      `— Lado a lado.`;
+    const boasVindas = isWorkshop
+      ? `Olá, ${primeiroNome}! Aqui é o Luiz Curti. 👋\n\n` +
+        `Recebi sua inscrição no *Workshop Gestão & Networking* — dia 20 de julho, às 19h, no Agro Bar, em Formosa.\n\n` +
+        `Sua vaga está reservada. Perto do dia eu te mando um lembrete por aqui.\n\n` +
+        `— Lado a lado.`
+      : `Olá, ${primeiroNome}! Aqui é o Luiz Curti. 👋\n\n` +
+        `Recebi seu cadastro no *Desafio Empreendedor Alexânia*. ` +
+        `Em breve a gente conversa pra entender o momento da sua empresa.\n\n` +
+        `Se quiser adiantar, é só me responder por aqui.\n\n` +
+        `— Lado a lado.`;
 
     await Promise.all([
       zapiSendText(notifyPhone, aviso),
