@@ -10,16 +10,16 @@ import LeadForm from "@/components/LeadForm";
 import { workshopFAQ } from "@/data/workshop";
 
 const WA_WORKSHOP =
-  "https://wa.me/5561981726782?text=Quero%20garantir%20minha%20vaga%20no%20workshop%20gratuito";
+  "https://wa.me/5561981726782?text=Quero%20garantir%20minha%20vaga%20no%20workshop%20Gest%C3%A3o%20%26%20Networking%20em%20Formosa";
 
 export const metadata: Metadata = {
-  title: "Workshop Gratuito — Empresário Rico x Empresário Pobre",
+  title: "Workshop Gestão & Networking — Formosa, GO",
   description:
-    "Workshop gratuito e presencial para donos de empresa em Alexânia. 25 de abril de 2026. Descubra o que trava o crescimento do seu negócio.",
+    "Workshop gratuito e presencial para donos de empresa em Formosa. 20 de julho de 2026, às 19h, no Agro Bar. Descubra o que trava o crescimento do seu negócio.",
   openGraph: {
-    title: "Workshop Gratuito — Empresário Rico x Empresário Pobre",
+    title: "Workshop Gestão & Networking — Formosa, GO",
     description:
-      "25 de abril em Alexânia. Gratuito e presencial para donos de PME.",
+      "20 de julho, 19h, no Agro Bar em Formosa. Gratuito e presencial para donos de PME.",
     images: ["/og-workshop.jpg"],
   },
 };
@@ -45,12 +45,12 @@ export default function WorkshopPage() {
         {/* HERO */}
         <section className="flex min-h-screen flex-col items-center justify-center px-6 pt-20 text-center">
           <p className="mb-4 text-sm font-medium tracking-widest text-gold uppercase">
-            Workshop Gratuito e Presencial
+            Workshop Gratuito e Presencial — Formosa, GO
           </p>
           <h1 className="font-heading text-5xl leading-tight tracking-wide text-white uppercase md:text-7xl">
-            Empresário Rico
+            Gestão
             <br />
-            <span className="text-gold">x</span> Empresário Pobre
+            <span className="text-gold">&</span> Networking
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-text md:text-xl">
             Não é dinheiro. Não é sorte. Não é o mercado.
@@ -59,9 +59,9 @@ export default function WorkshopPage() {
             passa dentro do seu negócio todo dia.
           </p>
           <div className="mt-6 flex items-center justify-center gap-3 text-sm text-gray-text">
-            <span className="font-semibold text-white">25 de abril</span>
+            <span className="font-semibold text-white">20 de julho, 19h</span>
             <span className="text-gray-border">|</span>
-            <span>Alexânia, GO</span>
+            <span>Agro Bar — Formosa, GO</span>
             <span className="text-gray-border">|</span>
             <span className="text-gold">Gratuito</span>
           </div>
@@ -94,20 +94,20 @@ export default function WorkshopPage() {
           <div className="space-y-6">
             {[
               {
-                title: "O padrão que separa quem cresce de quem fica parado",
-                text: "E como identificar em qual grupo você está hoje.",
+                title: "As 6 gestões que mantêm uma empresa viva",
+                text: "Emocional, Estratégica, Comercial, Financeira, Operacional e Pessoas — e por que, quando uma falha, as outras compensam só até o limite.",
               },
               {
                 title: "Por que você trabalha cada vez mais e o negócio não responde",
-                text: "O erro silencioso que 8 em cada 10 donos de PME cometem sem perceber.",
+                text: "Empresa não morre de repente: ela dá sinais. Você vai aprender a ler esses sinais antes que virem crise no caixa.",
               },
               {
-                title: "O que mudar primeiro",
-                text: "Quando tudo parece urgente, existe uma ordem certa. Você vai sair com ela.",
+                title: "O custo real de decidir no impulso",
+                text: "Casos reais de decisões tomadas sob emoção — e ferramentas práticas de autogestão e de caixa pra não repetir na sua empresa.",
               },
               {
-                title: "O custo real de continuar no piloto automático",
-                text: "Em dinheiro, em tempo e em saúde.",
+                title: "Diagnóstico ao vivo: a Mandala do Lucro",
+                text: "No final, você faz o autodiagnóstico das 6 gestões e sai sabendo quais são as 2 mais críticas do seu negócio — e o que mudar primeiro.",
               },
             ].map((item, i) => (
               <div key={i} className="flex gap-4 border-l-2 border-gold pl-6">
@@ -120,7 +120,9 @@ export default function WorkshopPage() {
           </div>
           <p className="mt-10 text-lg text-gray-text">
             Você vai olhar pro seu negócio com clareza — talvez pela primeira
-            vez em anos.
+            vez em anos. E, além do conteúdo, vai sair com algo que nenhum
+            vídeo na internet entrega: conexão com outros donos de empresa de
+            Formosa que estão no mesmo jogo que você.
           </p>
         </Section>
 
@@ -129,7 +131,7 @@ export default function WorkshopPage() {
           <SectionTitle>Esse workshop é pra você se:</SectionTitle>
           <ul className="space-y-4 text-lg leading-relaxed">
             {[
-              "Você é dono de empresa em Alexânia, Abadiânia, Olhos d'Água ou região.",
+              "Você é dono de empresa em Formosa ou região.",
               "Você sente que trabalha demais e o negócio não anda. Fatura, mas não sobra.",
               "Você quer clareza sobre o que mudar primeiro — sem precisar de um MBA ou de um guru.",
               "Já tentou várias coisas e nada colou de verdade.",
@@ -184,15 +186,15 @@ export default function WorkshopPage() {
             <p className="font-heading text-4xl text-gold">31.000+</p>
             <p className="text-gray-text">
               empresários já passaram por esse método em todo o Brasil.
-              Agora ele chega a Alexânia.
+              Agora ele chega a Formosa.
             </p>
           </div>
           <div className="mt-8 border-t border-gray-border pt-8">
             <p className="text-lg font-semibold text-gold">
-              Por que Alexânia?
+              Por que Formosa?
             </p>
             <p className="mt-3 text-gray-text leading-relaxed">
-              Trouxe esse trabalho pra Alexânia porque acredito que consultor bom
+              Trouxe esse trabalho pra Formosa porque acredito que consultor bom
               não fica só em capital. As empresas daqui sustentam famílias, geram
               emprego e movem a economia da região. Elas merecem acesso ao mesmo
               nível de trabalho que uma empresa em Brasília ou Goiânia tem.
@@ -200,23 +202,14 @@ export default function WorkshopPage() {
           </div>
         </Section>
 
-        {/* ALEXÂNIA — DIVISOR VISUAL */}
-        <section className="relative h-52 overflow-hidden md:h-64">
-          <Image
-            src="/images/alexania.jpg"
-            alt="Vista aérea de Alexânia, GO"
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-black-deep/70" />
-          <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
-            <p className="font-heading text-3xl tracking-wide text-gold uppercase md:text-4xl">
-              25 de abril — Alexânia, GO
-            </p>
-            <p className="mt-2 text-gray-text">
-              Workshop gratuito e presencial
-            </p>
-          </div>
+        {/* FORMOSA — DIVISOR VISUAL */}
+        <section className="relative flex h-52 flex-col items-center justify-center overflow-hidden border-y border-gray-border bg-black-soft px-6 text-center md:h-64">
+          <p className="font-heading text-3xl tracking-wide text-gold uppercase md:text-4xl">
+            20 de julho, 19h — Agro Bar, Formosa, GO
+          </p>
+          <p className="mt-2 text-gray-text">
+            Workshop gratuito e presencial · Gestão & Networking
+          </p>
         </section>
 
         {/* DETALHES DO EVENTO */}
@@ -224,9 +217,9 @@ export default function WorkshopPage() {
           <SectionTitle>Informações do workshop</SectionTitle>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
-              { label: "Data", value: "25 de abril de 2026 (sexta-feira)" },
-              { label: "Horário", value: "A confirmar" },
-              { label: "Local", value: "Alexânia, GO" },
+              { label: "Data", value: "20 de julho de 2026 (segunda-feira)" },
+              { label: "Horário", value: "19h" },
+              { label: "Local", value: "Agro Bar — Formosa, GO" },
               { label: "Duração", value: "Aproximadamente 2 horas" },
               { label: "Investimento", value: "Gratuito" },
               { label: "Vagas", value: "Limitadas" },
@@ -251,7 +244,7 @@ export default function WorkshopPage() {
           <div className="space-y-4 text-lg leading-relaxed text-gray-text">
             <p>Pergunta justa. Vou ser honesto.</p>
             <p>
-              Esse workshop é a porta de entrada para o meu trabalho em Alexânia.
+              Esse workshop é a porta de entrada para o meu trabalho em Formosa.
               Eu estou lançando o Desafio Empreendedor — um programa presencial de
               7 meses para donos de empresa que querem resultados reais.
             </p>

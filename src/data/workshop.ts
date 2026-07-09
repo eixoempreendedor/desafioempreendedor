@@ -1,5 +1,10 @@
 export const workshopFAQ = [
   {
+    question: "Onde e quando vai ser?",
+    answer:
+      "No Agro Bar, em Formosa — GO, dia 20 de julho às 19h. O ambiente é descontraído de propósito: conteúdo primeiro, networking com outros donos de empresa da região no final.",
+  },
+  {
     question: "Preciso levar algo?",
     answer:
       "Não. Só você e disposição pra ouvir com honestidade. Se quiser anotar, leve caderno ou celular. Mas o mais importante é estar presente.",
@@ -12,12 +17,12 @@ export const workshopFAQ = [
   {
     question: "Vai ter venda no final?",
     answer:
-      "Não. Vou apresentar brevemente o Desafio Empreendedor — o programa de 7 meses que começa em maio. Mas não vai ter pressão, não vai ter oferta relâmpago, não vai ter \"só pra quem fechar agora\". Você decide no seu tempo.",
+      "Não. Vou apresentar brevemente o Desafio Empreendedor — o programa presencial de 7 meses. Mas não vai ter pressão, não vai ter oferta relâmpago, não vai ter \"só pra quem fechar agora\". Você decide no seu tempo.",
   },
   {
     question: "Como faço pra me inscrever?",
     answer:
-      "Pelo WhatsApp. Clica no botão, manda uma mensagem e a gente confirma sua vaga. Leva menos de 1 minuto.",
+      "Preenche o formulário aqui na página com nome, telefone e empresa — leva menos de 1 minuto. A gente confirma sua vaga pelo WhatsApp.",
   },
   {
     question: "Tem custo?",
