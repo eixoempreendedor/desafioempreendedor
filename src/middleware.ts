@@ -4,6 +4,17 @@ import type { NextRequest } from "next/server";
 export function middleware(request: NextRequest) {
   const host = request.headers.get("host") || "";
 
+  // Domínio da campanha Gestão & Networking (Formosa) — serve a página
+  // do workshop na raiz, mantendo a URL limpa (rewrite, não redirect)
+  if (host.includes("gestaoenetworkingformosa")) {
+    if (request.nextUrl.pathname === "/") {
+      const url = request.nextUrl.clone();
+      url.pathname = "/workshop";
+      return NextResponse.rewrite(url);
+    }
+    return NextResponse.next();
+  }
+
   // Domínio da campanha antiga (Empresário Rico x Pobre) — redireciona
   // para a página do workshop atual (Gestão & Networking — Formosa)
   if (host.includes("empresarioricovsempresariopobre")) {
