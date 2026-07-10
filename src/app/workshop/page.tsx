@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Workshop Gestão & Networking — Formosa, GO",
     description:
       "20 de julho, 19h, no Agro Bar em Formosa. Gratuito e presencial para donos de PME.",
-    images: ["/og-workshop.jpg"],
+    images: ["/og-workshop.png"],
   },
 };
 
