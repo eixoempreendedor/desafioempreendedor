@@ -1,3 +1,8 @@
+// Link de convite do grupo de WhatsApp do evento (formato
+// https://chat.whatsapp.com/XXXXX). Vazio = botão e menção ao grupo
+// ficam ocultos no site e na auto-resposta.
+export const WORKSHOP_WHATSAPP_GROUP = "";
+
 export const workshopFAQ = [
   {
     question: "Onde e quando vai ser?",

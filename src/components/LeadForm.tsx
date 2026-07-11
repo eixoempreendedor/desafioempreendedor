@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { WORKSHOP_WHATSAPP_GROUP } from "@/data/workshop";
 
 const WA_RICARDO = "https://wa.me/556199319238";
 
@@ -70,6 +71,16 @@ export default function LeadForm({ variant = "desafio" }: { variant?: FormVarian
           {form.nome}, você será redirecionado para o WhatsApp do Ricardo, nosso
           coordenador.
         </p>
+        {variant === "workshop" && WORKSHOP_WHATSAPP_GROUP && (
+          <a
+            href={WORKSHOP_WHATSAPP_GROUP}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-block bg-gold px-6 py-3 font-heading text-lg tracking-wider text-black-deep uppercase transition-all hover:bg-gold-light"
+          >
+            Entrar no grupo do evento
+          </a>
+        )}
         <p className="mt-2 text-sm text-gray-muted">
           Se não abrir automaticamente,{" "}
           <a

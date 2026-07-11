@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { WORKSHOP_WHATSAPP_GROUP } from "@/data/workshop";
 
 // Normaliza telefone BR pra formato Z-API (55 + DDD + numero)
 function normPhone(raw: string): string {
@@ -61,10 +62,14 @@ export async function POST(request: Request) {
       `Origem: ${origem || "desafio"}`;
 
     // 2) Auto-resposta pro lead
+    const grupoLinha = WORKSHOP_WHATSAPP_GROUP
+      ? `Entra no grupo do evento — é por lá que eu vou passar todas as informações:\n${WORKSHOP_WHATSAPP_GROUP}\n\n`
+      : "";
     const boasVindas = isWorkshop
       ? `Olá, ${primeiroNome}! Aqui é o Luiz Curti. 👋\n\n` +
         `Recebi sua inscrição no *Workshop Gestão & Networking* — dia 20 de julho, às 19h, no Agro Bar, em Formosa.\n\n` +
-        `Sua vaga está reservada. Perto do dia eu te mando um lembrete por aqui.\n\n` +
+        `Sua vaga está reservada. ${grupoLinha ? "" : "Perto do dia eu te mando um lembrete por aqui.\n\n"}` +
+        grupoLinha +
         `— Lado a lado.`
       : `Olá, ${primeiroNome}! Aqui é o Luiz Curti. 👋\n\n` +
         `Recebi seu cadastro no *Desafio Empreendedor Alexânia*. ` +
