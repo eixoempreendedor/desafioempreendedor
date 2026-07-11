@@ -4,9 +4,10 @@ import type { NextRequest } from "next/server";
 export function middleware(request: NextRequest) {
   const host = request.headers.get("host") || "";
 
-  // Domínio da campanha Gestão & Networking (Formosa) — serve a página
-  // do workshop na raiz, mantendo a URL limpa (rewrite, não redirect)
-  if (host.includes("gestaoenetworkingformosa")) {
+  // Domínios da campanha de Formosa (ex.: gestaoenetworkingformosa,
+  // desafioempreendedorformosa) — servem a página do workshop na raiz,
+  // mantendo a URL limpa (rewrite, não redirect)
+  if (host.includes("formosa")) {
     if (request.nextUrl.pathname === "/") {
       const url = request.nextUrl.clone();
       url.pathname = "/workshop";
