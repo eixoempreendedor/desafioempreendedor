@@ -61,8 +61,12 @@ criativo inteiro (é o que a peça B faz).
 
 ## 2. Os criativos
 
-Três peças de feed e um story. A escolha de três ângulos diferentes é
-proposital: no primeiro round você testa **ângulo**, não layout.
+Quatro ângulos, cada um em feed (1080×1350) e story (1080×1920) — oito peças.
+A escolha de quatro ângulos genuinamente diferentes é proposital: no primeiro
+round você testa **ângulo**, não layout.
+
+Cada ângulo ataca um eixo distinto: A o custo do jeito atual, B a mecânica da
+oferta, C a dor da dependência, D a categoria de solução errada.
 
 ### A — Custo de fazer sozinho (`Main`, feed 1080×1350)
 
@@ -135,11 +139,40 @@ anúncio e a landing page falando a mesma língua.
 por lead qualificado melhor, além de gerar mais salvamento e comentário —
 o que derruba o CPM numa praça pequena.
 
-### A-story (`Story`, 1080×1920)
+### D — Curso não resolve (`FeedD`, feed 1080×1350)
 
-Versão vertical da peça A. Zonas de segurança respeitadas: 264 px no topo,
-340 px na base. A faixa dourada termina acima da zona inferior de propósito,
-para não brigar com o sticker de link nem com a barra de resposta.
+O único ângulo que compara em vez de acusar — e o único que ataca o
+concorrente real. Em praça pequena o dono de PME não está escolhendo entre
+você e outro consultor: está decidindo se não resolve com mais um curso ou
+mentoria online. Essa objeção já está no FAQ do site (*"já tentei curso e
+mentoria e não funcionou"*), então é objeção verificada deste mercado.
+
+> **NÃO COMPRE MAIS UM CURSO.**
+>
+> Você já sabe o que precisa fazer. O que falta é alguém dentro da empresa
+> fazendo acontecer com você.
+>
+> | Um curso | Eu |
+> | --- | --- |
+> | Te dá aula | Vou até a sua empresa |
+> | Te manda uma planilha | Monto o processo com a sua equipe |
+> | Acaba quando você fecha o vídeo | Te cobro todo mês, por 7 meses |
+> | Não sabe o seu nome | Sei o nome do seu gargalo |
+
+**Uso:** público que já consumiu infoproduto de gestão. Também é a peça mais
+segura no Meta, porque compara ofertas em vez de afirmar a condição de quem lê.
+
+### Stories
+
+Os quatro ângulos têm versão vertical: `StoryA`, `StoryB`, `StoryC` e
+`StoryD`. Zonas de segurança respeitadas em todas — 264 px no topo e 340 px na
+base, para a barra de resposta e o sticker de link. A faixa dourada termina
+acima da zona inferior de propósito, e a chamada "arrasta pra cima e responde"
+fica entre a faixa e o sticker.
+
+Os stories não são recorte do feed: cada um foi recomposto para a proporção
+vertical, com o título maior e o corpo enxugado, porque story é lido em
+movimento e com o polegar já no gesto de avançar.
 
 ---
 
@@ -213,6 +246,30 @@ Responde aqui — leva 1 minuto 👇
 - **Título:** `Sua empresa funciona sem você?`
 - **Descrição:** `7 meses de trabalho real · Formosa, GO`
 
+### Para o criativo D
+
+```
+Você não precisa de mais um curso de gestão.
+
+Você já sabe o que precisa fazer. Já assistiu aula, já baixou planilha, já
+salvou post. O que falta não é informação — é alguém dentro da empresa fazendo
+acontecer com você.
+
+Um curso te dá aula. Eu vou até a sua empresa.
+Um curso te manda uma planilha. Eu monto o processo com a sua equipe.
+Um curso acaba quando você fecha o vídeo. Eu te cobro todo mês, por 7 meses.
+
+R$ 7.000 de taxa de compromisso pelos 7 meses. O resto eu só recebo sobre o
+resultado que a gente construir junto — e meu teto é R$ 42 mil.
+
+Luiz Curti, Consultor de Resultados Empresariais. Agora em Formosa.
+
+Responde aqui — leva 1 minuto 👇
+```
+
+- **Título:** `Aula não arruma empresa. Trabalho arruma`
+- **Descrição:** `7 meses dentro da sua empresa · Formosa, GO`
+
 ---
 
 ## 4. Configuração da campanha
@@ -254,8 +311,9 @@ criação:
 O ponto crítico numa praça desse tamanho não é o custo — é a **frequência**.
 O mesmo criativo roda para as mesmas pessoas e satura rápido.
 
-- Suba **3 criativos no mesmo conjunto** (A, B e C) e deixe o algoritmo
-  distribuir, em vez de um conjunto por criativo.
+- Suba **os quatro ângulos no mesmo conjunto** e deixe o algoritmo distribuir,
+  em vez de um conjunto por criativo. Com feed e story de cada um, são oito
+  peças — material suficiente para as primeiras duas rotações.
 - Acompanhe a frequência: **acima de 2,5 em 7 dias**, troque a peça em vez de
   aumentar o orçamento.
 - Planeje uma **rotação a cada 14–21 dias**. As três peças acima são a
@@ -281,7 +339,7 @@ Uma variável por rodada. Sem isso, o resultado não ensina nada.
 
 | Rodada | O que testa | Como |
 | --- | --- | --- |
-| 1 | **Ângulo** | A (custo de fazer sozinho) × B (a conta na mesa) × C (teste dos 15 dias), mesmo público, mesmo orçamento |
+| 1 | **Ângulo** | A (custo de fazer sozinho) × B (a conta na mesa) × C (teste dos 15 dias) × D (curso não resolve), mesmo público, mesmo orçamento |
 | 2 | **Enquadramento do preço** | Vencedor da rodada 1 com "R$ 7.000 pelos 7 meses" × "R$ 1.000 por mês" |
 | 3 | **Formato** | Estático vencedor × vídeo do Luiz falando o mesmo roteiro em 40 s |
 
@@ -327,6 +385,10 @@ Três coisas que reprovam anúncio nessa categoria:
   PNG sai com a tipografia certa.
 - **Não copie o verde da referência.** O verde é a marca do anúncio que
   inspirou este kit. O seu é ouro sobre preto.
+- **Formosa aparece em três lugares em toda peça:** selo no topo, linha de
+  abertura acima do título e uma menção no corpo do texto. O selo e a linha
+  marcam a praça; a menção no corpo é o que faz o leitor sentir que o anúncio
+  foi escrito para ele, e não geolocalizado por cima de uma peça genérica.
 - **Texto na imagem:** nada abaixo de 20 px reais, para continuar legível no
   feed do celular.
 
@@ -612,8 +674,10 @@ junto da resposta. Marque cada criativo com `utm_content`:
 https://SEU-FORMULARIO.respondi.app/?utm_source=meta&utm_medium=cpc&utm_campaign=formosa-gestao&utm_content=criativo-a
 ```
 
-Trocando `criativo-a` por `criativo-b` e `criativo-c`. A origem chega na
-planilha de respostas, e a mensagem do WhatsApp fica limpa.
+Trocando `criativo-a` por `criativo-b`, `criativo-c` e `criativo-d` — e vale
+separar formato também (`criativo-a-feed`, `criativo-a-story`), já que feed e
+story costumam ter custo por lead bem diferente. A origem chega na planilha de
+respostas, e a mensagem do WhatsApp fica limpa.
 
 ---
 
