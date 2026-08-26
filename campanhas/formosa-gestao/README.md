@@ -669,11 +669,49 @@ formulário. Para esta campanha isso é ruim por duas razões:
 2. O evento dispara **ao chegar no campo, não ao preenchê-lo**.
 
 O segundo ponto é o que resolve o primeiro. Escolha *"Ao chegar em um campo
-específico"* e aponte para a **pergunta 5** (*"O que mais te trava hoje?"*).
-Chegar na 5 só é possível depois de enviar nome, WhatsApp e empresa — ou
-seja, o evento conta exatamente quem já entregou o contato completo, com
-volume muito maior do que "formulário concluído". Deixe `EndForm` como
-métrica de acompanhamento, para medir a taxa real de conclusão.
+específico"* e aponte para o **primeiro campo depois do WhatsApp** — no
+formulário como está publicado, a pergunta 4 (*"Qual o nome da sua empresa e
+o que ela faz?"*). Chegar nela só é possível depois de enviar nome e WhatsApp,
+então o evento conta exatamente quem já entregou o contato, com volume muito
+maior do que "formulário concluído". Deixe `EndForm` como métrica de
+acompanhamento, para medir a taxa real de conclusão.
+
+**Se a ordem das perguntas mudar, esse apontamento muda junto.** A regra é
+sempre a mesma: o campo imediatamente seguinte ao último dado de contato, já
+que o evento dispara ao chegar e não ao preencher.
+
+### Tela final: botão, não redirecionamento
+
+Na tela de agradecimento o Respondi oferece *Redirecionar para link* e *Botão
+para WhatsApp*. **Use o botão.** O redirecionamento automático custa três
+coisas:
+
+1. Joga a pessoa para fora sem ela pedir. No celular isso assusta e parte dos
+   leads volta.
+2. Elimina a tela de agradecimento — some o "recebi, {nome}" e o "se preferir,
+   eu te chamo em até 24h", que é onde a expectativa é definida.
+3. Pode sair da página **antes de o evento de conversão registrar**, e aí você
+   perde a conversão que pagou para ter.
+
+Com botão, o lead clica, o evento registra e quem não clicar continua sendo
+lead completo.
+
+### Estado do formulário publicado
+
+O formulário no ar tem cinco perguntas: tempo tentando sozinho, nome,
+WhatsApp, empresa e o valor de compromisso. As três perguntas de diagnóstico e
+urgência da seção 9 (o que trava, projeção de 12 meses, prazo) não foram
+implantadas.
+
+É uma troca defensável — formulário curto converte mais. Mas vale saber o que
+fica de fora: **sem a projeção de 12 meses e sem o prazo, nada no formulário
+mede urgência**. A pergunta 1 mede tempo decorrido, que é passado. Se entrar
+só uma das três, que seja a de 12 meses: é a que faz o lead formular sozinho o
+custo de não fazer nada, e é a que ordena a fila.
+
+Duas ausências que continuam pendentes: a cidade (a campanha é geolocalizada,
+mas a segmentação do Meta erra e o programa é presencial) e o aviso de LGPD
+com link para `/privacidade`, que o Meta cobra do destino do anúncio.
 
 ### Públicos de retargeting que saem de graça
 
