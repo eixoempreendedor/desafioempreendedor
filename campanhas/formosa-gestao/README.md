@@ -412,12 +412,12 @@ encolhe" chega na sua conversa já convencido. Você não precisou convencer.
 
 **Tela de abertura:**
 
-> **Antes da gente conversar, me conta como está a sua empresa hoje.**
+> **Antes da gente conversar, me conta como está a gestão da sua empresa hoje.**
 > São 7 perguntas rápidas — leva 1 minuto. Não tem resposta certa; quanto mais
 > honesto, mais útil vai ser a nossa conversa.
 > `[Começar]`
 
-**1. Há quanto tempo você tenta resolver isso sozinho?** · múltipla escolha
+**1. Há quanto tempo você tenta organizar a gestão da empresa sozinho?** · múltipla escolha
 > - Menos de 6 meses
 > - Entre 6 meses e 1 ano
 > - Entre 1 e 3 anos
@@ -428,6 +428,23 @@ Abre com tempo decorrido, não com dado cadastral. É um toque para responder,
 não é invasiva, e é a primeira pergunta que faz a pessoa encarar quanto tempo
 já passou. "Perdi a conta" existe para quem não quer contar — e é a resposta
 que mais aquece quem a escolhe.
+
+A pergunta é autossuficiente de propósito: sendo a primeira tela, um "resolver
+isso" apontaria para nada, já que o formulário ainda não disse do que se trata.
+E ela repete as duas palavras do criativo — **gestão** e, principalmente,
+**sozinho**.
+
+"Sozinho" é a palavra que sustenta a campanha inteira: é o título da peça A, é
+a premissa da oferta ("eu entro na sua empresa") e é uma dor que já está no
+`beforeAfter` do site ("Solidão — ninguém entende o peso de ser dono"). Ela
+precisa sobreviver à passagem do anúncio para o formulário; se morrer aqui, o
+formulário vira outra conversa.
+
+**Alternativa para testar depois:** *"Há quanto tempo a sua empresa está no
+mesmo lugar?"* — usa a linguagem exata da home ("o negócio continua do mesmo
+tamanho de três anos atrás") e dói mais, porque fala de resultado em vez de
+categoria. Não deve subir primeiro: ela lê errado o dono que está crescendo
+com a gestão bagunçada, e esse também é cliente.
 
 **2. Seu nome completo** · resposta curta · obrigatória
 
@@ -464,7 +481,7 @@ encolher" e "chego no meu limite" vão para o topo da lista.
 quiser a versão dura, é essa — combina com o tom do site, que já diz que o
 problema é o dono. A contida erra menos com quem está mal de verdade.
 
-**7. Quando você quer resolver isso?** · múltipla escolha
+**7. Quando você quer começar a mudar isso?** · múltipla escolha
 > - Agora — já passou da hora
 > - Nos próximos 30 dias
 > - Ainda nesse semestre
@@ -473,6 +490,10 @@ problema é o dono. A contida erra menos com quem está mal de verdade.
 "Já passou da hora" deixa a pessoa admitir urgência sem constrangimento.
 E "só estou pesquisando" não descarta ninguém: muda o texto da tela final e a
 posição na fila.
+
+Aqui o "isso" pode ficar, porque a pergunta 5 já nomeou o gargalo e dá o
+antecedente. "Começar" é deliberado: baixa o compromisso da resposta, que é o
+certo num formulário que não descarta ninguém.
 
 **Rodapé de consentimento**, antes do envio:
 > Ao enviar, você concorda que eu entre em contato pelo WhatsApp. Seus dados
