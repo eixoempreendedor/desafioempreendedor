@@ -210,14 +210,18 @@ Me chama aqui 👇
 
 ### Objetivo e destino
 
-**Recomendação: Mensagens → WhatsApp (click-to-WhatsApp).** A oferta não
-fecha por formulário: ela depende de uma conversa em que você entende o
-negócio antes de falar de valor — que é exatamente o que a página inicial
-já promete no FAQ. Mandar o lead direto pra conversa corta uma etapa.
+**Destino: formulário no Respondi.** O anúncio manda para o formulário, o
+formulário empurra para o WhatsApp na tela final.
 
-Formulário instantâneo do Meta é a segunda opção, e só faz sentido se o
-volume de conversa passar do que dá pra atender. Tráfego para a landing page
-fica para o retargeting.
+**Objetivo no Meta: Vendas/Leads, otimizando pelo evento `RespondiConversion`
+— nunca Tráfego.** Tráfego otimiza para clique, e clique numa oferta dessas
+enche o formulário de gente que abre e sai. Só a otimização por conversão faz
+o Meta procurar quem *responde*.
+
+Isso tem um pré-requisito de orçamento: a integração de Pixel do Respondi
+**só existe no plano PRO ou superior**. Sem PRO não há pixel, sem pixel não há
+evento de conversão, e a campanha inteira vira tráfego. É decisão de plano
+antes de decisão de mídia.
 
 ### Público
 
@@ -366,29 +370,21 @@ Análise do formulário "Empresários Formosa" como está hoje:
    investimento hoje?" é uma pergunta que ninguém responde com sinceridade
    para um desconhecido. Quem responde "sim" muitas vezes está só sendo
    educado; e quem responde "não" pode ser um ótimo cliente que apenas não
-   tem o valor *hoje* — a palavra é literal demais e descarta gente boa.
+   tem o valor *hoje* — a palavra é literal demais.
 3. **Contraria o que você mesmo promete.** O FAQ do site diz: *"Eu prefiro
    entender sua situação antes de falar de valor."* O formulário faz o
    inverso.
 
 **A pergunta 5 é campo aberto.** "Quando você consegue realizar este
 investimento?" em resposta curta produz "depende", "em breve", "?" — respostas
-que não dá para ordenar nem priorizar. Se a pergunta continuar, tem que ser
-múltipla escolha.
+que não dá para ordenar nem priorizar.
 
-**A pergunta 1 só se paga se tiver desvio lógico.** "Você possui uma
-empresa? SIM/NÃO" antes do contato: se o "NÃO" não pula direto para uma tela
-de saída, ela é só atrito — a pessoa responde "não" e continua preenchendo o
-resto à toa, e você fica com um lead ruim indistinguível dos bons. Ou
-configura o pulo condicional, ou tira a pergunta.
+**A pergunta 1 não faz nada.** Como nenhum lead vai ser descartado,
+"Você possui uma empresa? SIM/NÃO" é só uma tela a mais antes do contato.
 
-**Falta o nome da empresa.** É o campo que dá a primeira frase da conversa
-no WhatsApp — e é campo obrigatório do endpoint que o site já usa
+**Falta o nome da empresa** — é a primeira frase da conversa no WhatsApp, e é
+campo obrigatório do endpoint que o site já usa
 (`src/app/api/workshop-signup/route.ts` recusa o envio sem `empresa`).
-
-**Falta a cidade.** A campanha é geolocalizada, mas a segmentação do Meta
-erra, e o programa é presencial. Sem esse campo você marca entrevista com
-gente de Brasília.
 
 **Falta o aviso de LGPD.** O site já tem `/privacidade`. Um formulário que
 coleta nome e telefone precisa dizer o que faz com eles e linkar a política —
@@ -398,96 +394,111 @@ e o Meta reprova destino de anúncio sem política acessível.
 faz nada. O lead mais quente que existe é o que acabou de terminar o
 formulário: essa tela tem que jogar ele direto no WhatsApp.
 
+### A premissa mudou: ninguém vai ser descartado
+
+Isso reescreve a função do formulário. Ele não filtra — ele faz três coisas:
+
+1. **Captura o contato** cedo, para que abandono no meio ainda deixe um lead.
+2. **Ordena a fila** de quem você chama primeiro.
+3. **Aquece o lead**, fazendo ele mesmo formular o custo de continuar parado.
+
+O terceiro item é o que dá senso de urgência de verdade. Urgência não se cria
+com contador regressivo nem com "últimas vagas" — se cria fazendo a pessoa
+colocar em palavras há quanto tempo o problema existe e o que acontece se
+nada mudar. Quem responde "faz mais de três anos" e "daqui a um ano a empresa
+encolhe" chega na sua conversa já convencido. Você não precisou convencer.
+
 ### Versão recomendada
 
-Formosa é praça pequena — o volume vai ser baixo. Filtrar demais numa
-audiência pequena mata o funil antes de ele existir. **Comece pela versão
-enxuta** e só passe para a longa quando não conseguir atender todo mundo.
+**Tela de abertura:**
 
-#### Versão enxuta (a que deve subir agora)
-
-**Tela de abertura** — reduz a quebra de expectativa entre anúncio e
-formulário, que é a maior fonte de abandono:
-
-> **Me conta da sua empresa em 1 minuto.**
-> Depois disso a gente conversa no WhatsApp. Sem compromisso e sem enrolação.
+> **Antes da gente conversar, me conta como está a sua empresa hoje.**
+> São 7 perguntas rápidas — leva 1 minuto. Não tem resposta certa; quanto mais
+> honesto, mais útil vai ser a nossa conversa.
 > `[Começar]`
 
-**1. Seu nome completo** · resposta curta · obrigatória
+**1. Há quanto tempo você tenta resolver isso sozinho?** · múltipla escolha
+> - Menos de 6 meses
+> - Entre 6 meses e 1 ano
+> - Entre 1 e 3 anos
+> - Mais de 3 anos
+> - Sinceramente, perdi a conta
 
-**2. Seu WhatsApp** · telefone · obrigatória
+Abre com tempo decorrido, não com dado cadastral. É um toque para responder,
+não é invasiva, e é a primeira pergunta que faz a pessoa encarar quanto tempo
+já passou. "Perdi a conta" existe para quem não quer contar — e é a resposta
+que mais aquece quem a escolhe.
+
+**2. Seu nome completo** · resposta curta · obrigatória
+
+**3. Seu WhatsApp** · telefone · obrigatória
 > É por aqui que eu te chamo.
 
-**3. Qual o nome da sua empresa e o que ela faz?** · resposta curta · obrigatória
+**4. Qual o nome da sua empresa e o que ela faz?** · resposta curta · obrigatória
 > Ex.: "Padaria do João — padaria e confeitaria"
 
-**4. Em que cidade fica a empresa?** · múltipla escolha · obrigatória
-> Formosa · Planaltina de Goiás · Água Fria de Goiás · Outra cidade da região · Fora da região
-
-**5. O que mais te trava hoje?** · múltipla escolha · obrigatória
+**5. O que mais te trava hoje?** · múltipla escolha
 > - Não sei quanto sobra no fim do mês
 > - A equipe não anda sem mim
 > - Vendo, mas não sobra
 > - Vivo apagando incêndio
 > - Quero crescer e não sei por onde
 
-Essa é a pergunta mais valiosa do formulário inteiro: um toque para
-responder, e ela te entrega pronta a primeira frase da conversa no WhatsApp.
-As opções saem do próprio "antes e depois" que já está em `src/data/home.ts`
-— o lead se reconhece na linguagem que ele já viu no anúncio.
+As opções saem do "antes e depois" que já está em `src/data/home.ts` — o lead
+se reconhece na mesma linguagem que viu no anúncio. Esta é a pergunta que te
+entrega pronta a primeira frase da conversa.
 
-**Rodapé de consentimento**, na última tela, antes do botão de envio:
+**6. Se nada mudar, como sua empresa vai estar daqui a 12 meses?** · múltipla escolha
+> - Continua exatamente do mesmo tamanho
+> - Vai encolher
+> - Ainda cresce, mas bem menos do que podia
+> - Chego no meu limite
+> - Não sei dizer
+
+**É a pergunta mais importante do formulário.** Ela pede que a pessoa projete
+o custo de não fazer nada — que é o único jeito honesto de gerar urgência, já
+que a urgência passa a ser dela e não sua. E ordena a fila sozinha: "vai
+encolher" e "chego no meu limite" vão para o topo da lista.
+
+"Chego no meu limite" é a versão contida de "não aguento mais e fecho". Se
+quiser a versão dura, é essa — combina com o tom do site, que já diz que o
+problema é o dono. A contida erra menos com quem está mal de verdade.
+
+**7. Quando você quer resolver isso?** · múltipla escolha
+> - Agora — já passou da hora
+> - Nos próximos 30 dias
+> - Ainda nesse semestre
+> - Só estou pesquisando por enquanto
+
+"Já passou da hora" deixa a pessoa admitir urgência sem constrangimento.
+E "só estou pesquisando" não descarta ninguém: muda o texto da tela final e a
+posição na fila.
+
+**Rodapé de consentimento**, antes do envio:
 > Ao enviar, você concorda que eu entre em contato pelo WhatsApp. Seus dados
 > ficam comigo e com meu time. [Política de privacidade](/privacidade)
 
-**Tela final** — substitui "Obrigado por participar!":
+**Telas finais** — duas versões, por lógica condicional na pergunta 7:
+
+*Quem respondeu "Agora" ou "Nos próximos 30 dias":*
 > **Recebi, {primeiro nome}.**
 > Me chama no WhatsApp agora que eu já estou com as suas respostas na mão.
 > `[Abrir o WhatsApp]`
-> Se preferir, eu te chamo em até 24h.
 
-#### Perguntas para a versão longa
+*Quem respondeu "Nesse semestre" ou "Só pesquisando":*
+> **Recebi, {primeiro nome}.**
+> Sem pressa. Vou te mandar uma mensagem pra você me conhecer melhor antes de
+> decidir qualquer coisa.
+> `[Abrir o WhatsApp]`
 
-Só entram quando o volume passar da sua capacidade de atender:
-
-**6. Quantas pessoas trabalham com você hoje?** · múltipla escolha
-> Só eu · 1 a 3 · 4 a 10 · 11 a 30 · Mais de 30
-
-O critério do programa é ter equipe, mesmo que pequena — está no FAQ do site.
-Essa pergunta qualifica isso sem constranger ninguém.
-
-**7. Faturamento médio por mês** · múltipla escolha
-> Até R$ 30 mil · R$ 30 mil a R$ 100 mil · R$ 100 mil a R$ 300 mil · Acima de
-> R$ 300 mil · Prefiro falar na conversa
-
-**Esta é a substituta da pergunta 4 atual.** Faixa de faturamento qualifica
-capacidade de pagamento muito melhor do que "consegue investir hoje?", e não
-soa como teste. A opção "prefiro falar na conversa" existe de propósito:
-quem a escolhe não é descartado, é conversado.
-
-**8. O trabalho começa com uma entrevista presencial na sua empresa. Quando
-você quer que ela aconteça?** · múltipla escolha
-> Essa semana · Nos próximos 15 dias · Ainda esse mês · Quero entender melhor antes
-
-Esta substitui a pergunta 5 atual. Mede prontidão em vez de dinheiro, é
-fechada (dá para ordenar a fila por ela) e não pede compromisso financeiro
-de quem ainda não te conhece.
+Mesmo lead capturado nos dois casos — muda só o próximo passo.
 
 ### Onde falar de preço
 
 Não no formulário. O preço já está no criativo, com a conta completa —
-inclusive o teto. Quem preencheu o formulário depois de ver a peça já viu o
-número. Repetir só a metade dele no formulário não filtra ninguém: só cria
-uma segunda versão da oferta que o contrato não confirma.
-
-Se ainda assim quiser um filtro explícito de investimento, o lugar certo é a
-tela de abertura, como enquadramento e não como pergunta:
-
-> Me conta da sua empresa em 1 minuto. É um trabalho de 7 meses que começa em
-> R$ 7.000 de taxa de compromisso — se isso está fora de cogitação agora, sem
-> problema, mas prefiro te avisar antes de você preencher.
-
-Assim quem não tem condição sai sozinho, sem ter que declarar isso para você.
+inclusive o teto. Quem preencheu depois de ver a peça já viu o número.
+Repetir só metade dele no formulário não filtra ninguém: cria uma segunda
+versão da oferta que o contrato não confirma.
 
 ### Integração com o que o site já faz
 
@@ -495,25 +506,17 @@ O site já tem o funil montado em `src/app/api/workshop-signup/route.ts`:
 avisa o Luiz por WhatsApp (Z-API), manda auto-resposta para o lead, grava no
 Google Sheets e redireciona para o WhatsApp do coordenador.
 
-Um formulário externo não tem nada disso. Duas saídas:
+Aponte o **webhook do Respondi** para `POST /api/workshop-signup` com
+`{ nome, telefone, empresa, origem: "formosa-gestao" }`. O aviso, a
+auto-resposta e a planilha voltam a funcionar sem trabalho novo de front-end.
 
-1. **Apontar o webhook do formulário externo** para `POST /api/workshop-signup`
-   com `{ nome, telefone, empresa, origem: "formosa-gestao" }`. O aviso, a
-   auto-resposta e a planilha voltam a funcionar. Os campos novos (cidade,
-   gargalo, faturamento) precisam ser aceitos pela rota e incluídos na
-   mensagem de aviso — hoje ela só monta nome, empresa e telefone.
-2. **Usar o formulário do próprio site** (`LeadForm`, com uma variante nova
-   `formosa-gestao`) e mandar o anúncio para uma página da oferta. Dá mais
-   trabalho, mas mantém tudo num lugar só, com o pixel e o GTM que já estão
-   instalados — e o retargeting depende disso.
+Duas mudanças pequenas na rota valem a pena:
 
-A opção 2 é a melhor no médio prazo. A 1 destrava a campanha essa semana.
-
-Em qualquer uma das duas, a auto-resposta ao lead precisa de um texto novo:
-a atual fala do Desafio Empreendedor em Alexânia ou do workshop de julho,
-nenhum dos dois é esta campanha.
-
----
+- **Incluir as respostas de qualificação no aviso.** Hoje a mensagem monta só
+  nome, empresa e telefone. Com o que trava, o prazo e a projeção de 12 meses
+  no aviso, você abre o WhatsApp já sabendo por onde começar.
+- **Texto novo de auto-resposta.** A atual fala do Desafio Empreendedor em
+  Alexânia ou do workshop de julho; nenhum dos dois é esta campanha.
 
 ## 10. Link de destino (WhatsApp)
 
@@ -535,16 +538,99 @@ https://wa.me/5561981726782?text=Tenho%20interesse%20no%20Desafio%20Empreendedor
   codificado (`ç` → `%C3%A7`, `õ` → `%C3%B5`), senão chega quebrada em parte
   dos aparelhos.
 
-### Uma variação por criativo
+### Rastreio da origem
 
-A origem do lead não chega junto no WhatsApp. A forma mais barata de saber
-qual peça gerou cada conversa é mudar a mensagem por anúncio:
+Com o formulário no meio do caminho, não é preciso sujar a mensagem do
+WhatsApp com sufixos: o Respondi captura UTM, GCLID e FBCLID da URL e grava
+junto da resposta. Marque cada criativo com `utm_content`:
 
-| Criativo | Link |
-| --- | --- |
-| A — Custo de fazer sozinho | `https://wa.me/5561981726782?text=Tenho%20interesse%20no%20Desafio%20Empreendedor%20-%20A` |
-| B — A conta na mesa | `https://wa.me/5561981726782?text=Tenho%20interesse%20no%20Desafio%20Empreendedor%20-%20B` |
-| C — Teste dos 15 dias | `https://wa.me/5561981726782?text=Tenho%20interesse%20no%20Desafio%20Empreendedor%20-%20C` |
+```
+https://SEU-FORMULARIO.respondi.app/?utm_source=meta&utm_medium=cpc&utm_campaign=formosa-gestao&utm_content=criativo-a
+```
 
-O sufixo aparece na conversa, então vale manter discreto — uma letra basta
-para você separar na hora de contar de onde veio cada entrevista marcada.
+Trocando `criativo-a` por `criativo-b` e `criativo-c`. A origem chega na
+planilha de respostas, e a mensagem do WhatsApp fica limpa.
+
+---
+
+## 11. Configuração do Respondi
+
+### Cores do formulário
+
+O padrão do Respondi é azul `#2979FF` sobre branco — cara de pesquisa
+genérica. Quem clica num anúncio preto e dourado e cai numa tela branca e
+azul sente que trocou de empresa, e a taxa de abandono na primeira pergunta
+sobe. As cores abaixo são as mesmas de `src/app/globals.css`:
+
+| Campo | Valor | Contraste |
+| --- | --- | --- |
+| Cor de fundo | `#121214` | — |
+| Cor da pergunta | `#FAFAFA` | 17,9:1 |
+| Cor da resposta | `#E8B84D` | 10,2:1 |
+| Cor do botão | `#D4A017` | 7,9:1 sobre o fundo |
+| Logotipo | `public/images/logo-full.png` | — |
+| Imagem de fundo | nenhuma | — |
+
+**Sem imagem de fundo.** Foto atrás de formulário só atrapalha a leitura da
+pergunta — e a foto do Luiz já apareceu no anúncio que trouxe a pessoa até
+aqui. O logotipo dá a continuidade de marca que falta.
+
+**Uma coisa para conferir depois de publicar:** a cor do texto *dentro* do
+botão, que o Respondi não deixa você escolher. Se ele sair branco, branco
+sobre `#D4A017` dá **2,4:1** — ilegível. Nesse caso troque a cor do botão
+para `#9A7009`, que sobe para 4,5:1 com texto branco e continua sendo ouro.
+Se o texto do botão sair escuro, fique com `#D4A017`, que é o ouro exato do
+CTA do site.
+
+Não use ouro sobre fundo branco em lugar nenhum: `#D4A017` sobre `#FFFFFF`
+dá 2,4:1. O ouro dessa marca só funciona sobre escuro.
+
+### Pixel e evento de conversão
+
+O Respondi dispara cinco eventos para o Pixel do Meta: `PageView`,
+`StartForm` (primeira interação), `SubmitAnswer` (a cada pergunta
+respondida), `EndForm` (formulário concluído) e `RespondiConversion`.
+
+**Configuração:** aba *Opções* → *Integrações* → habilitar *Facebook Pixel*
+→ colar o ID → *Salvar* e **publicar** o formulário. Requer plano PRO.
+
+**Onde marcar a conversão — é a decisão mais importante da configuração.**
+Em *Integrações* → *Configurar Conversão*, o padrão é disparar ao finalizar o
+formulário. Para esta campanha isso é ruim por duas razões:
+
+1. Numa praça do tamanho de Formosa, o volume de formulários concluídos vai
+   ser baixo demais. O Meta precisa de dezenas de eventos por semana em cada
+   conjunto para sair da fase de aprendizado; otimizando só por conclusão, o
+   algoritmo nunca aprende.
+2. O evento dispara **ao chegar no campo, não ao preenchê-lo**.
+
+O segundo ponto é o que resolve o primeiro. Escolha *"Ao chegar em um campo
+específico"* e aponte para a **pergunta 5** (*"O que mais te trava hoje?"*).
+Chegar na 5 só é possível depois de enviar nome, WhatsApp e empresa — ou
+seja, o evento conta exatamente quem já entregou o contato completo, com
+volume muito maior do que "formulário concluído". Deixe `EndForm` como
+métrica de acompanhamento, para medir a taxa real de conclusão.
+
+### Públicos de retargeting que saem de graça
+
+Os quatro eventos automáticos dão três públicos prontos:
+
+| Público | Como montar | Criativo |
+| --- | --- | --- |
+| Abriu e nem começou | `PageView` sem `StartForm` | B — a conta na mesa |
+| Começou e não terminou | `StartForm` sem `EndForm` | o mais quente que existe; vale um criativo só de lembrete |
+| Concluiu | `EndForm` | **excluir de todos os conjuntos** |
+
+A exclusão de quem já concluiu é a que mais economiza dinheiro numa praça
+pequena: sem ela você paga para reimpactar quem já é lead, justamente porque
+o público é pequeno e a mesma pessoa reaparece toda hora.
+
+### Lógica condicional e webhook
+
+- **Lógica condicional** na pergunta 7 para escolher entre as duas telas
+  finais (seção 9). Nenhum caminho descarta ninguém — muda só o texto e a
+  posição na fila.
+- **Webhook** apontando para `POST /api/workshop-signup`, para reaproveitar o
+  aviso por WhatsApp, a auto-resposta e a planilha que o site já tem.
+- **Captura de UTM/GCLID/FBCLID** ativada, para o `utm_content` de cada
+  criativo chegar junto da resposta.
