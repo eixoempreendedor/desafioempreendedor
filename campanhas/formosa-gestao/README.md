@@ -14,39 +14,44 @@ Criativos montados (feed 1080×1350 e story 1080×1920):
 | Item | Valor |
 | --- | --- |
 | Taxa de compromisso | R$ 7.000 pelos 7 meses (R$ 1.000/mês) |
-| Ganho variável | 10% do resultado que a gente construir junto (incremento sobre a linha de base) |
+| Ganho variável | Só sobre o resultado construído junto (incremento sobre a linha de base); percentual não divulgado na comunicação |
 | Teto de recebimento | R$ 42.000 no programa inteiro |
 | Duração | 7 meses de trabalho dentro da empresa |
 | Praça | Formosa, GO e região |
 
-### Como os 10% são cobrados — decidido
+### O percentual não é dito na comunicação
 
-**10% sobre o resultado que a gente construir junto**, não sobre todo o lucro
-operacional da empresa. Ou seja: sobre o incremento em cima da linha de base,
-apurada no diagnóstico.
+A parte variável existe, mas **o percentual não aparece em criativo nem em
+formulário**. O que a comunicação diz é o mecanismo:
 
-Era a leitura recomendada e é a que ficou. Ela é o que sustenta a linha mais
-forte do criativo — *"se o lucro não crescer, eu não ganho mais nada"* — e é o
-que faz o teto de R$ 42 mil significar alguma coisa. A alternativa (10% de
-todo o lucro operacional) transformaria a oferta em imposto sobre dinheiro que
-o dono já ganhava antes de te conhecer: quem lucra R$ 20 mil/mês pagaria
-R$ 14 mil de variável em 7 meses sem nenhuma melhora ter acontecido.
+> *O resto eu só recebo sobre o resultado que a gente construir junto.*
 
-Os criativos e o formulário falam a mesma língua por causa disso:
+E o mecanismo é sobre o **incremento** — o que a empresa passar a ganhar acima
+da linha de base apurada no diagnóstico —, não sobre todo o lucro operacional.
+É isso que sustenta a linha mais forte da peça A, *"se o lucro não crescer, eu
+não ganho mais nada"*.
 
 | Onde | Como aparece |
 | --- | --- |
-| Peças A e story | "+ 10% do lucro que a gente construir junto" |
-| Peça B | "O resto do meu ganho — 10% do lucro que a gente construir junto" |
-| Peça C | "R$ 7.000 + 10% do que crescer" |
-| Formulário, pergunta 8 | "eu só ganho sobre o resultado que a gente construir junto" |
+| Peças A e story | "Por 7 meses de trabalho. O resto eu só recebo sobre o resultado que a gente construir junto — e meu teto é R$ 42 mil." |
+| Peça B | "O resto do meu ganho — só sobre o resultado que a gente construir junto" |
+| Peça C | "R$ 7.000 fixos. O resto, só no resultado." |
+| Formulário, pergunta 8 | "Fora isso, eu só ganho sobre o resultado que a gente construir junto." |
 
-Se em algum momento o contrato mudar para lucro total, **todas essas linhas
-precisam mudar junto** — e a de reversão de risco precisa sair.
+**A troca que isso implica.** O percentual fazia um trabalho: dava ao
+empresário como calcular o pior caso sozinho, antes de falar com você. Sem
+ele, a comunicação fica mais quente e menos precisa, e a primeira pergunta da
+conversa no WhatsApp passa a ser *"quanto é esse resto?"* — o que não é ruim,
+desde que você espere isso e tenha a resposta pronta.
+
+A consequência prática: **o teto de R$ 42 mil vira o único número que limita a
+parte variável**, então ele não pode sair de peça nenhuma. Sem percentual e
+sem teto, "eu ganho sobre o resultado" viraria um cheque em branco — que é
+exatamente o medo que a peça B existe para desarmar.
 
 ### O teto é o melhor ativo da oferta — e o anúncio de referência não tem
 
-O anúncio que serviu de inspiração cobra 10% sem teto. Todo empresário que
+O anúncio que serviu de inspiração cobra um percentual sem teto. Todo empresário que
 lê um percentual aberto pensa a mesma coisa: *"e se der muito certo, quanto
 esse cara vai levar?"*. Você tem a resposta pronta (R$ 42 mil) e ninguém
 mais mostra isso antes de assinar. Não esconda no rodapé — é headline de
@@ -85,8 +90,9 @@ divisão de trabalho, faixa de oferta.
 > **Se o lucro não crescer, eu não ganho mais nada.**
 >
 > **COMIGO VOCÊ PAGA** — R$ 7.000 de taxa de compromisso. Por 7 meses de
-> trabalho + 10% do lucro que a gente construir junto. Meu teto é R$ 42 mil —
-> do que passar disso, 100% é seu. **Responde aqui — leva 1 minuto ↓**
+> trabalho. O resto eu só recebo sobre o resultado que a gente construir junto
+> — e meu teto é R$ 42 mil. Do que passar disso, 100% é seu.
+> **Responde aqui — leva 1 minuto ↓**
 
 **Uso:** criativo de abertura, público frio. É o mais próximo da referência
 e o que carrega a oferta inteira na imagem.
@@ -99,7 +105,7 @@ e o que carrega a oferta inteira na imagem.
 > contratar, a conta inteira, na mesa:
 >
 > 1. **Taxa de compromisso** — R$ 7.000 pelos 7 meses (R$ 1.000 por mês)
-> 2. **O resto do meu ganho** — 10% do lucro que a gente construir junto
+> 2. **O resto do meu ganho** — só sobre o resultado que a gente construir junto
 > 3. **Meu teto** — R$ 42.000; do que passar disso, 100% é seu
 >
 > Nenhum consultor te mostra o próprio teto antes de você assinar.
@@ -155,8 +161,9 @@ Enquanto isso a empresa continua parando quando você para.
 Eu faço diferente: eu entro na sua empresa por 7 meses, monto o processo e te
 cobro todo mês. O lucro continua sendo seu.
 
-R$ 7.000 de taxa de compromisso + 10% do lucro que a gente construir junto.
-Meu teto é R$ 42 mil — do que passar disso, 100% é seu.
+R$ 7.000 de taxa de compromisso pelos 7 meses. O resto eu só recebo sobre o
+resultado que a gente construir junto — e meu teto é R$ 42 mil. Do que passar
+disso, 100% é seu.
 
 Sou Luiz Curti, Consultor de Resultados Empresariais. O método por trás do
 Desafio Empreendedor já formou 31 mil empresários no Brasil. Agora em Formosa.
@@ -173,7 +180,7 @@ Responde aqui — leva 1 minuto 👇
 A conta inteira, antes de você contratar:
 
 R$ 7.000 de taxa de compromisso pelos 7 meses. Dá R$ 1.000 por mês.
-Mais 10% do lucro que a gente construir junto.
+O resto eu só recebo sobre o resultado que a gente construir junto.
 Meu teto é R$ 42 mil. Do que passar disso, 100% é seu.
 
 Nenhum consultor te mostra o próprio teto antes de você assinar. Eu mostro,
@@ -182,7 +189,7 @@ porque só ganho de verdade se a sua empresa lucrar mais.
 Responde aqui e eu te explico a conta 👇
 ```
 
-- **Título:** `R$ 1.000 por mês + 10% do que crescer`
+- **Título:** `R$ 1.000 por mês. O resto, só no resultado`
 - **Descrição:** `Consultoria de gestão em Formosa, GO`
 
 ### Para o criativo C
@@ -362,7 +369,8 @@ Análise do formulário "Empresários Formosa" como está hoje:
 **A pergunta 4 é o problema mais caro do funil.** São três erros num campo só:
 
 1. **Contradiz o anúncio.** O criativo diz *R$ 7.000 de taxa de compromisso
-   + 10% do resultado construído junto, teto de R$ 42 mil*. O formulário dizia *"nosso
+   e o resto só sobre o resultado construído junto, com teto de R$ 42 mil*. O
+   formulário dizia *"nosso
    trabalho custa R$ 7.000"*. Quem responder "sim, consigo investir" e depois
    descobrir o variável na conversa vai sentir que faltou informação. Numa
    oferta cujo argumento inteiro é transparência — você mostra até o próprio
