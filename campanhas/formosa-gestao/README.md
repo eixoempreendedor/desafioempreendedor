@@ -14,33 +14,35 @@ Criativos montados (feed 1080×1350 e story 1080×1920):
 | Item | Valor |
 | --- | --- |
 | Taxa de compromisso | R$ 7.000 pelos 7 meses (R$ 1.000/mês) |
-| Ganho variável | 10% do lucro operacional |
+| Ganho variável | 10% do resultado que a gente construir junto (incremento sobre a linha de base) |
 | Teto de recebimento | R$ 42.000 no programa inteiro |
 | Duração | 7 meses de trabalho dentro da empresa |
 | Praça | Formosa, GO e região |
 
-### Uma decisão que precisa ser tomada antes de subir o anúncio
+### Como os 10% são cobrados — decidido
 
-**"10% do lucro operacional" — de tudo, ou só do que crescer?**
+**10% sobre o resultado que a gente construir junto**, não sobre todo o lucro
+operacional da empresa. Ou seja: sobre o incremento em cima da linha de base,
+apurada no diagnóstico.
 
-As duas leituras vendem coisas muito diferentes:
+Era a leitura recomendada e é a que ficou. Ela é o que sustenta a linha mais
+forte do criativo — *"se o lucro não crescer, eu não ganho mais nada"* — e é o
+que faz o teto de R$ 42 mil significar alguma coisa. A alternativa (10% de
+todo o lucro operacional) transformaria a oferta em imposto sobre dinheiro que
+o dono já ganhava antes de te conhecer: quem lucra R$ 20 mil/mês pagaria
+R$ 14 mil de variável em 7 meses sem nenhuma melhora ter acontecido.
 
-- **10% de todo o lucro operacional.** Um dono que já lucra R$ 20 mil/mês lê
-  o anúncio e calcula que vai pagar R$ 2 mil/mês sobre dinheiro que já
-  ganhava antes de te conhecer. Vira imposto, não sociedade. Some com o
-  teto rápido: 10% de R$ 20 mil × 7 meses = R$ 14 mil de variável, sem
-  nenhuma melhora ter acontecido.
-- **10% do lucro operacional que crescer** (sobre a média dos 12 meses
-  anteriores, apurada no diagnóstico). Aí o argumento fecha: você só ganha
-  mais se o cliente ganhar mais, e o teto passa a significar alguma coisa.
+Os criativos e o formulário falam a mesma língua por causa disso:
 
-**Recomendação: a segunda.** É ela que sustenta a linha mais forte do
-criativo — *"se o lucro não crescer, eu não ganho mais nada"*. Os criativos
-estão escritos com o texto curto ("10% do lucro operacional") que cabe nas
-duas leituras, mas **a copy tem que bater com o contrato**. Se a cobrança
-for sobre o lucro total, a linha de reversão de risco precisa sair dos
-criativos — do contrário é promessa que o contrato não entrega, e isso
-volta como reclamação depois da assinatura.
+| Onde | Como aparece |
+| --- | --- |
+| Peças A e story | "+ 10% do lucro que a gente construir junto" |
+| Peça B | "O resto do meu ganho — 10% do lucro que a gente construir junto" |
+| Peça C | "R$ 7.000 + 10% do que crescer" |
+| Formulário, pergunta 8 | "eu só ganho sobre o resultado que a gente construir junto" |
+
+Se em algum momento o contrato mudar para lucro total, **todas essas linhas
+precisam mudar junto** — e a de reversão de risco precisa sair.
 
 ### O teto é o melhor ativo da oferta — e o anúncio de referência não tem
 
@@ -83,8 +85,8 @@ divisão de trabalho, faixa de oferta.
 > **Se o lucro não crescer, eu não ganho mais nada.**
 >
 > **COMIGO VOCÊ PAGA** — R$ 7.000 de taxa de compromisso. Por 7 meses de
-> trabalho + 10% do lucro operacional. Meu teto é R$ 42 mil — do que passar
-> disso, 100% é seu. **Me chama aqui ↓**
+> trabalho + 10% do lucro que a gente construir junto. Meu teto é R$ 42 mil —
+> do que passar disso, 100% é seu. **Responde aqui — leva 1 minuto ↓**
 
 **Uso:** criativo de abertura, público frio. É o mais próximo da referência
 e o que carrega a oferta inteira na imagem.
@@ -97,7 +99,7 @@ e o que carrega a oferta inteira na imagem.
 > contratar, a conta inteira, na mesa:
 >
 > 1. **Taxa de compromisso** — R$ 7.000 pelos 7 meses (R$ 1.000 por mês)
-> 2. **O resto do meu ganho** — 10% do lucro operacional
+> 2. **O resto do meu ganho** — 10% do lucro que a gente construir junto
 > 3. **Meu teto** — R$ 42.000; do que passar disso, 100% é seu
 >
 > Nenhum consultor te mostra o próprio teto antes de você assinar.
@@ -153,13 +155,13 @@ Enquanto isso a empresa continua parando quando você para.
 Eu faço diferente: eu entro na sua empresa por 7 meses, monto o processo e te
 cobro todo mês. O lucro continua sendo seu.
 
-R$ 7.000 de taxa de compromisso + 10% do lucro operacional. Meu teto é
-R$ 42 mil — do que passar disso, 100% é seu.
+R$ 7.000 de taxa de compromisso + 10% do lucro que a gente construir junto.
+Meu teto é R$ 42 mil — do que passar disso, 100% é seu.
 
 Sou Luiz Curti, Consultor de Resultados Empresariais. O método por trás do
 Desafio Empreendedor já formou 31 mil empresários no Brasil. Agora em Formosa.
 
-Me chama aqui 👇
+Responde aqui — leva 1 minuto 👇
 ```
 
 - **Título:** `Gestão de verdade dentro da sua empresa`
@@ -171,13 +173,13 @@ Me chama aqui 👇
 A conta inteira, antes de você contratar:
 
 R$ 7.000 de taxa de compromisso pelos 7 meses. Dá R$ 1.000 por mês.
-Mais 10% do lucro operacional.
+Mais 10% do lucro que a gente construir junto.
 Meu teto é R$ 42 mil. Do que passar disso, 100% é seu.
 
 Nenhum consultor te mostra o próprio teto antes de você assinar. Eu mostro,
 porque só ganho de verdade se a sua empresa lucrar mais.
 
-Me chama e eu te explico a conta 👇
+Responde aqui e eu te explico a conta 👇
 ```
 
 - **Título:** `R$ 1.000 por mês + 10% do que crescer`
@@ -198,7 +200,7 @@ trabalho de verdade.
 Trabalho 7 meses dentro da empresa de donos de PME em Formosa pra que ela ande
 sem depender do dono.
 
-Me chama aqui 👇
+Responde aqui — leva 1 minuto 👇
 ```
 
 - **Título:** `Sua empresa funciona sem você?`
@@ -360,7 +362,7 @@ Análise do formulário "Empresários Formosa" como está hoje:
 **A pergunta 4 é o problema mais caro do funil.** São três erros num campo só:
 
 1. **Contradiz o anúncio.** O criativo diz *R$ 7.000 de taxa de compromisso
-   + 10% do lucro operacional, teto de R$ 42 mil*. O formulário diz *"nosso
+   + 10% do resultado construído junto, teto de R$ 42 mil*. O formulário dizia *"nosso
    trabalho custa R$ 7.000"*. Quem responder "sim, consigo investir" e depois
    descobrir o variável na conversa vai sentir que faltou informação. Numa
    oferta cujo argumento inteiro é transparência — você mostra até o próprio
@@ -413,7 +415,7 @@ encolhe" chega na sua conversa já convencido. Você não precisou convencer.
 **Tela de abertura:**
 
 > **Antes da gente conversar, me conta como está a gestão da sua empresa hoje.**
-> São 7 perguntas rápidas — leva 1 minuto. Não tem resposta certa; quanto mais
+> São 8 perguntas rápidas — leva 1 minuto. Não tem resposta certa; quanto mais
 > honesto, mais útil vai ser a nossa conversa.
 > `[Começar]`
 
@@ -494,6 +496,39 @@ posição na fila.
 Aqui o "isso" pode ficar, porque a pergunta 5 já nomeou o gargalo e dá o
 antecedente. "Começar" é deliberado: baixa o compromisso da resposta, que é o
 certo num formulário que não descarta ninguém.
+
+**8. Última pergunta.** · múltipla escolha
+
+> O trabalho é de 7 meses e envolve um investimento fixo de compromisso de
+> **R$ 1.000 por mês** — os R$ 7.000. Fora isso, eu só ganho sobre o resultado
+> que a gente construir junto.
+>
+> **Esse valor fixo cabe no seu orçamento?**
+> - Cabe, sem problema
+> - Cabe, mas preciso me organizar antes
+> - Hoje não cabe, mas quero conversar mesmo assim
+> - Prefiro falar disso na conversa
+
+**Por que no fim e não no meio.** Aqui a pergunta de dinheiro não custa nada:
+nome, WhatsApp, empresa e as três respostas de diagnóstico já foram enviados.
+Quem desistir nesta tela continua sendo um lead completo. Era esse o problema
+da versão antiga, que colocava o preço na pergunta 4 e perdia o contato junto.
+
+**Por que não é sim/não.** Num formulário que não descarta ninguém, o binário
+só força um desconhecido a se declarar — e joga fora a informação que
+interessa. "Não este mês" e "não, nunca" são leads completamente diferentes, e
+o sim/não trata os dois igual. As quatro opções ordenam a fila sozinhas, e
+"hoje não cabe, mas quero conversar" é a que mais entrega: o próprio lead te
+adianta a objeção antes da primeira mensagem.
+
+**Sobre a redação.** "Cabe no seu orçamento" no lugar de "você dispõe desse
+valor" — "dispõe" tem cara de formulário de banco, e o resto da campanha fala
+como gente ("some por 15 dias", "vivo apagando incêndio"). E "cabe" pergunta
+sobre encaixe, não sobre a capacidade da pessoa, que é mais fácil de responder
+com honestidade.
+
+O "hoje" saiu do fim da pergunta e virou uma das opções. Como pergunta, ele
+empurra para o "não"; como opção, deixa a pessoa escolher o "hoje não, mas".
 
 **Rodapé de consentimento**, antes do envio:
 > Ao enviar, você concorda que eu entre em contato pelo WhatsApp. Seus dados
