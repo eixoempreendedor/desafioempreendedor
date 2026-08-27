@@ -26,6 +26,10 @@ export default function Footer() {
           >
             @luizcurti
           </a>
+          <span className="text-gray-border">|</span>
+          <a href="/privacidade" className="transition-colors hover:text-gold">
+            Política de privacidade
+          </a>
         </div>
         <p className="mt-8 text-xs text-gray-muted">
           &copy; {new Date().getFullYear()} Núcleo Consultoria. Todos os direitos reservados.
