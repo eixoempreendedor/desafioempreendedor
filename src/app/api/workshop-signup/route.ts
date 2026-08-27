@@ -37,7 +37,8 @@ async function zapiSendText(phone: string, message: string) {
 
 export async function POST(request: Request) {
   try {
-    const { nome, telefone, empresa, origem } = await request.json();
+    const { nome, telefone, empresa, origem, regime, faturamento } =
+      await request.json();
 
     if (!nome || !telefone || !empresa) {
       return NextResponse.json(
@@ -51,21 +52,44 @@ export async function POST(request: Request) {
     const leadPhone = normPhone(telefone);
 
     const isWorkshop = origem === "workshop";
+    const isReforma = origem === "reforma";
+
+    const origemLabel = isWorkshop
+      ? "Workshop Gestão & Networking (Formosa)"
+      : isReforma
+        ? "Análise Tributária Reservada (Reforma)"
+        : "Desafio Empreendedor Alexânia";
 
     // 1) Avisa o Luiz (numero da instancia principal)
     const notifyPhone = process.env.LEAD_NOTIFY_PHONE || "5561981726782";
+    const qualificacao = isReforma
+      ? `\n📊 Regime: ${regime || "não informado"}\n💰 Faturamento: ${faturamento || "não informado"}`
+      : "";
     const aviso =
-      `🔔 *NOVO LEAD — ${isWorkshop ? "Workshop Gestão & Networking (Formosa)" : "Desafio Empreendedor Alexânia"}*\n\n` +
+      `🔔 *NOVO LEAD — ${origemLabel}*\n\n` +
       `👤 ${nome}\n` +
       `🏢 ${empresa}\n` +
-      `📱 ${telefone}\n\n` +
+      `📱 ${telefone}` +
+      `${qualificacao}\n\n` +
       `Origem: ${origem || "desafio"}`;
 
     // 2) Auto-resposta pro lead
     const grupoLinha = WORKSHOP_WHATSAPP_GROUP
       ? `Entra no grupo do evento — é por lá que eu vou passar todas as informações:\n${WORKSHOP_WHATSAPP_GROUP}\n\n`
       : "";
-    const boasVindas = isWorkshop
+    const analiseReservada =
+      `Olá, ${primeiroNome}! Aqui é o Luiz Curti. 👋\n\n` +
+      `Recebi seu pedido de *análise tributária reservada* da ${empresa}.\n\n` +
+      `Pra eu começar o levantamento, preciso de 3 coisas:\n` +
+      `1) XML das notas dos últimos 12 meses (ou o acesso pra eu baixar);\n` +
+      `2) as últimas guias — DAS ou apuração;\n` +
+      `3) o cartão CNPJ.\n\n` +
+      `Pode mandar por aqui mesmo. É reservado: não falo com o seu contador e o relatório vai só pra você.\n\n` +
+      `— Lado a lado.`;
+
+    const boasVindas = isReforma
+      ? analiseReservada
+      : isWorkshop
       ? `Olá, ${primeiroNome}! Aqui é o Luiz Curti. 👋\n\n` +
         `Recebi sua inscrição no *Workshop Gestão & Networking* — dia 20 de julho, às 19h, no Agro Bar, em Formosa.\n\n` +
         `Sua vaga está reservada. ${grupoLinha ? "" : "Perto do dia eu te mando um lembrete por aqui.\n\n"}` +
@@ -88,14 +112,25 @@ export async function POST(request: Request) {
       await fetch(webhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ nome, telefone, empresa, timestamp, origem: origem || "desafio" }),
+        body: JSON.stringify({
+          nome,
+          telefone,
+          empresa,
+          timestamp,
+          origem: origem || "desafio",
+          regime: regime || "",
+          faturamento: faturamento || "",
+        }),
       }).catch(() => {
         console.error("Webhook failed, but signup saved");
       });
     }
 
     // 4) Log sempre disponivel nos logs da Vercel
-    console.log("LEAD_SIGNUP:", JSON.stringify({ nome, telefone, empresa, origem, timestamp }));
+    console.log(
+      "LEAD_SIGNUP:",
+      JSON.stringify({ nome, telefone, empresa, origem, regime, faturamento, timestamp })
+    );
 
     return NextResponse.json({ success: true });
   } catch {
