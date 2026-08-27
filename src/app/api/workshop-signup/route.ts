@@ -106,8 +106,13 @@ export async function POST(request: Request) {
       zapiSendText(leadPhone, boasVindas),
     ]);
 
-    // 3) Google Sheets (opcional — se a env existir)
-    const webhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK;
+    // 3) Google Sheets (opcional — se a env existir).
+    // A campanha da reforma tem planilha propria; se a env dela nao estiver
+    // configurada, cai na planilha geral.
+    const webhookUrl = isReforma
+      ? process.env.GOOGLE_SHEETS_WEBHOOK_REFORMA ||
+        process.env.GOOGLE_SHEETS_WEBHOOK
+      : process.env.GOOGLE_SHEETS_WEBHOOK;
     if (webhookUrl) {
       await fetch(webhookUrl, {
         method: "POST",
